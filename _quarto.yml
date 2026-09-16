@@ -10,6 +10,8 @@ website:
     title: "PAIA Lab"
     collapse-below: lg
     right:
+      - href: index.qmd
+        text: Home
       - href: research.qmd
         text: Research
       - href: people.qmd
