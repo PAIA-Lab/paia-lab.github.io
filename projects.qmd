@@ -1,0 +1,17 @@
+---
+title: "Projects"
+---
+
+Our projects connect fundamental research in perception and AI with practical autonomous-system and transportation applications.
+
+## Multimodal Perception
+
+Robust perception and sensor fusion using radar, cameras, LiDAR, and complementary sensing modalities.
+
+## Reliable Autonomous Systems
+
+Methods for improving reliability, calibration, uncertainty awareness, and decision-making in autonomous platforms.
+
+## AI for Transportation and Robotics
+
+Applied AI for intelligent transportation systems, roadway safety, mobile robotics, and field-deployed sensing.
