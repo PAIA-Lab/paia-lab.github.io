@@ -1,0 +1,21 @@
+---
+title: "People"
+---
+
+PAIA Lab is a research group in the Department of Electrical and Computer Engineering at UTRGV.
+
+## Principal Investigator
+
+### Lei Cheng
+
+Assistant Professor  
+Department of Electrical and Computer Engineering  
+The University of Texas Rio Grande Valley
+
+Research interests include multimodal perception, autonomous systems, sensor fusion, reliable AI, and intelligent transportation.
+
+[Personal website](https://leicheng5.github.io/)
+
+## Students
+
+Student profiles will be added as the lab grows.
