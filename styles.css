@@ -1,14 +1,12 @@
 :root{
   --orange:#f05a28;
   --ink:#282a2b;
-  --charcoal:#3f4548;
-  --nav:#3a4145;
+  --nav:#394248;
   --paper:#ffffff;
-  --offwhite:#faf9f6;
-  --stone:#ece8e0;
-  --stone-light:#f5f2ec;
-  --stone-deep:#ded8cf;
-  --line:#d8d4cd;
+  --offwhite:#fbfbfa;
+  --soft:#f6f6f4;
+  --soft-deep:#eeeeeb;
+  --line:#d9d9d6;
   --muted:#676a6c;
   --link:#355f78;
   --max:1160px;
@@ -22,58 +20,58 @@ a:hover{color:#24485d}
 img{max-width:100%}
 
 /* shared navigation */
-.site-nav{position:sticky;top:0;z-index:50;background:var(--nav);border-bottom:1px solid #555d61}
-.nav-inner{max-width:var(--max);min-height:70px;margin:0 auto;padding:0 26px;display:flex;align-items:center;justify-content:space-between;gap:34px}
-.nav-brand{display:flex;align-items:center;text-decoration:none;min-width:185px}
-.nav-brand img{display:block;width:188px;height:auto}
-.nav-links{display:flex;align-items:stretch;gap:0;flex-wrap:wrap;justify-content:flex-end}
-.nav-links a{display:flex;align-items:center;min-height:70px;padding:0 17px;color:#f3f1ec;text-decoration:none;font-size:15px;font-weight:500;border-bottom:3px solid transparent}
+.site-nav{position:sticky;top:0;z-index:50;background:var(--nav);border-bottom:1px solid #505a60}
+.nav-inner{max-width:var(--max);min-height:70px;margin:0 auto;padding:0 26px;display:flex;align-items:center;justify-content:space-between;gap:26px}
+.nav-brand{display:flex;align-items:center;text-decoration:none;min-width:170px}
+.nav-brand img{display:block;width:180px;height:auto}
+.nav-links{display:flex;align-items:stretch;gap:0;flex-wrap:nowrap;justify-content:flex-end}
+.nav-links a{display:flex;align-items:center;min-height:70px;padding:0 14px;color:#f2f2f0;text-decoration:none;font-size:15px;font-weight:500;border-bottom:3px solid transparent;white-space:nowrap}
 .nav-links a:hover,.nav-links a.active{color:#fff;border-bottom-color:var(--orange)}
 
-/* home page — warm limestone palette inspired by the campus architecture */
-.home-body{background:var(--stone);color:var(--ink)}
-.home-hero{position:relative;min-height:490px;background-image:url("https://www.utrgv.edu/academicaffairs/_files/images/contact/edinburg-student-services.jpg");background-size:cover;background-position:center 48%;display:flex;align-items:center;justify-content:center;text-align:center;padding:70px 26px;overflow:hidden}
-.home-hero::before{content:"";position:absolute;inset:0;background:rgba(242,239,232,.82)}
+/* home page — light, restrained academic palette */
+.home-body{background:#fff;color:var(--ink)}
+.home-hero{position:relative;min-height:470px;background-image:url("https://www.utrgv.edu/academicaffairs/_files/images/contact/edinburg-student-services.jpg");background-size:cover;background-position:center 48%;display:flex;align-items:center;justify-content:center;text-align:center;padding:70px 26px;overflow:hidden;border-bottom:1px solid #dededb}
+.home-hero::before{content:"";position:absolute;inset:0;background:rgba(255,255,255,.86)}
 .hero-inner{position:relative;z-index:1;width:100%;max-width:930px;margin:0 auto}
-.hero-logo{display:block;width:min(720px,88vw);margin:0 auto 26px}
-.hero-rule{width:130px;border:0;border-top:2px solid var(--orange);margin:0 auto 24px}
-.hero-affiliation{margin:0;color:#4d5051;font-size:16px;line-height:1.55}
-.hero-affiliation strong{font-weight:600;color:#2f3335}
+.hero-logo{display:block;width:min(700px,86vw);margin:0 auto 24px}
+.hero-rule{width:120px;border:0;border-top:2px solid var(--orange);margin:0 auto 22px}
+.hero-affiliation{margin:0;color:#4f5457;font-size:16px;line-height:1.55}
+.hero-affiliation strong{font-weight:600;color:#303538}
 
-.home-welcome{background:var(--stone-light);padding:54px 26px 50px;text-align:center;border-top:1px solid #d6d0c7;border-bottom:1px solid #d6d0c7}
+.home-welcome{background:#fff;padding:52px 26px 48px;text-align:center;border-bottom:1px solid var(--line)}
 .home-welcome .inner{max-width:900px;margin:0 auto}
-.home-welcome h1{margin:0 0 18px;color:#30383c;font-size:30px;font-weight:650}
-.home-welcome p{margin:0 auto 12px;max-width:850px;color:#43484a;font-size:17px}
+.home-welcome h1{margin:0 0 18px;color:#30363a;font-size:30px;font-weight:650}
+.home-welcome p{margin:0 auto 12px;max-width:850px;color:#44494c;font-size:17px}
 
-.home-news{background:#e5e0d8;padding:48px 26px 58px}
+.home-news{background:var(--soft);padding:48px 26px 58px;border-bottom:1px solid var(--line)}
 .home-section-inner{max-width:var(--max);margin:0 auto}
-.home-section-title{margin:0 0 22px;padding:0 0 9px 13px;border-left:4px solid var(--orange);border-bottom:1px solid #aaa59d;color:#303638;font-size:27px;font-weight:650}
+.home-section-title{margin:0 0 22px;padding:0 0 9px 13px;border-left:4px solid var(--orange);border-bottom:1px solid #aaa;color:#303638;font-size:27px;font-weight:650}
 .news-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}
-.news-card{background:#faf8f4;border:1px solid #c9c3b9;min-height:100%;display:flex;flex-direction:column}
-.news-card-media{height:210px;background:#e9e5dd;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.news-card{background:#fff;border:1px solid #cececa;min-height:100%;display:flex;flex-direction:column}
+.news-card-media{height:210px;background:#f0f0ed;display:flex;align-items:center;justify-content:center;overflow:hidden}
 .news-card-media img.photo{width:100%;height:100%;object-fit:cover}
-.news-card-media img.logo{width:78%;max-height:145px;object-fit:contain}
+.news-card-media img.logo{width:76%;max-height:140px;object-fit:contain}
 .news-card-body{padding:22px 22px 18px;display:flex;flex-direction:column;flex:1}
 .news-card h2{margin:0 0 9px;color:#30383c;font-size:21px;font-weight:650}
-.news-card p{margin:0 0 13px;color:#4c5052;font-size:15px}
-.news-date{margin-top:auto;color:#6c7882!important;font-size:14px!important}
+.news-card p{margin:0 0 13px;color:#4b5053;font-size:15px}
+.news-date{margin-top:auto;color:#687784!important;font-size:14px!important}
 .home-more{margin:24px 0 0;text-align:center}
 .home-more a{color:var(--link);font-weight:600}
 
-.home-research{background:var(--stone-light);padding:55px 26px 62px;border-top:1px solid #d5d0c8}
+.home-research{background:#fbfbfa;padding:55px 26px 62px}
 .research-topics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:34px}
 .research-topic{padding-top:17px;border-top:2px solid var(--orange)}
 .research-topic h3{margin:0 0 9px;color:#303638;font-size:19px;font-weight:650}
 .research-topic p{margin:0;color:#55595b;font-size:15px}
 
-.home-footer,.site-footer{background:var(--nav);color:#ece9e3;border-top:1px solid #565e62}
+.home-footer,.site-footer{background:var(--nav);color:#eceeed;border-top:1px solid #505a60}
 .footer-inner{max-width:var(--max);margin:0 auto;padding:34px 26px 40px;display:grid;grid-template-columns:1fr 1.3fr 1fr;gap:44px}
-.footer-inner h3{margin:0 0 12px;color:#f3b095;font-size:18px;font-weight:650}
-.footer-inner p,.footer-inner li{margin:0 0 6px;color:#ece9e3;font-size:14px}
+.footer-inner h3{margin:0 0 12px;color:#f2ad90;font-size:18px;font-weight:650}
+.footer-inner p,.footer-inner li{margin:0 0 6px;color:#eceeed;font-size:14px}
 .footer-inner ul{list-style:none;padding:0;margin:0}
-.footer-inner a{color:#f4f1eb}
+.footer-inner a{color:#f4f5f4}
 .footer-logo{width:210px;margin-top:8px;opacity:.96}
-.footer-bottom{max-width:var(--max);margin:0 auto;padding:0 26px 20px;color:#bfc0bd;font-size:12px}
+.footer-bottom{max-width:var(--max);margin:0 auto;padding:0 26px 20px;color:#bdc2c4;font-size:12px}
 
 /* academic subpages: intentionally simple, content-first */
 .page-body{background:#fff;color:#252525}
@@ -99,10 +97,13 @@ img{max-width:100%}
 .research-entry-page p{margin:0 0 9px}
 
 .people-group{margin:0 0 46px}
-.people-group>h2{margin:0 0 18px;padding-bottom:8px;border-bottom:1px solid #ababab;font-size:23px;font-weight:600}
-.pi-profile{padding:0 0 12px}
-.pi-profile h3{margin:0 0 4px;font-size:20px;font-weight:600}
-.pi-profile p{margin:3px 0}
+.people-group>h2{margin:0 0 20px;padding-bottom:8px;border-bottom:1px solid #ababab;font-size:23px;font-weight:600}
+.person-list{display:grid;grid-template-columns:1fr;gap:26px}
+.person-card{display:grid;grid-template-columns:150px 1fr;gap:28px;align-items:start;padding:0 0 25px}
+.person-photo{width:150px;height:185px;background:#f1f1ef;border:1px solid #cfcfcb;display:flex;align-items:center;justify-content:center;color:#8a8d8e;font-size:13px;letter-spacing:.02em;overflow:hidden}
+.person-photo img{width:100%;height:100%;object-fit:cover;display:block}
+.person-info h3{margin:0 0 5px;font-size:20px;font-weight:600}
+.person-info p{margin:3px 0}
 .hiring-line{font-style:italic;color:#666}
 
 .publication-year{margin:36px 0 12px;font-size:23px;font-weight:600}
@@ -124,7 +125,7 @@ img{max-width:100%}
 
 @media(max-width:900px){
   .nav-inner{align-items:flex-start;flex-direction:column;padding-top:12px;padding-bottom:8px;gap:6px}
-  .nav-links{justify-content:flex-start;width:100%}
+  .nav-links{justify-content:flex-start;width:100%;flex-wrap:wrap}
   .nav-links a{min-height:44px;padding:0 12px 0 0;margin-right:16px}
   .news-cards,.research-topics{grid-template-columns:1fr}
   .footer-inner{grid-template-columns:1fr 1fr}
@@ -136,7 +137,7 @@ img{max-width:100%}
   .nav-inner{padding-left:18px;padding-right:18px}
   .nav-brand img{width:170px}
   .nav-links a{font-size:14px}
-  .home-hero{min-height:390px;padding-left:18px;padding-right:18px}
+  .home-hero{min-height:370px;padding-left:18px;padding-right:18px}
   .hero-affiliation{font-size:14px}
   .home-welcome,.home-news,.home-research{padding-left:18px;padding-right:18px}
   .home-section-title{font-size:24px}
@@ -146,4 +147,6 @@ img{max-width:100%}
   .page-title-inner,.page-main{padding-left:18px;padding-right:18px}
   .page-title-inner h1{font-size:29px}
   .news-row{grid-template-columns:1fr;gap:2px}
+  .person-card{grid-template-columns:110px 1fr;gap:18px}
+  .person-photo{width:110px;height:140px}
 }
