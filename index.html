@@ -8,87 +8,71 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header class="site-header">
-  <div class="identity-wrap">
-    <a class="paia-mark" href="index.html" aria-label="PAIA Lab home">
-      <img src="assets/paia-wordmark.webp" alt="PAIA Lab">
-    </a>
-    <a class="utrgv-mark" href="https://www.utrgv.edu/" aria-label="The University of Texas Rio Grande Valley">
-      <img src="https://www.utrgv.edu/_files/images-2022/logo.svg" alt="The University of Texas Rio Grande Valley">
-    </a>
-  </div>
-  <div class="nav-band">
-    <div class="nav-wrap">
-      <a class="brand" href="index.html">PAIA Lab</a>
-      <nav class="nav-links" aria-label="Main navigation">
-        <a href="research.html">Research</a>
-        <a href="people.html">People</a>
-        <a href="publications.html">Publications</a>
-        <a href="projects.html">Projects</a>
-        <a href="news.html">News</a>
-        <a href="openings.html">Openings</a>
-      </nav>
+<header class="site-header home-header">
+  <div class="home-head-wrap">
+    <div class="lab-identity">
+      <a class="paia-mark" href="index.html" aria-label="PAIA Lab home">
+        <img src="assets/paia-wordmark.webp" alt="PAIA Lab">
+      </a>
+      <div class="lab-affiliation">Department of Electrical and Computer Engineering · The University of Texas Rio Grande Valley</div>
     </div>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="research.html">Research</a>
+      <a href="people.html">People</a>
+      <a href="publications.html">Publications</a>
+      <a href="projects.html">Projects</a>
+      <a href="news.html">News</a>
+      <a href="openings.html">Openings</a>
+    </nav>
   </div>
 </header>
 
 <main class="home-main">
-  <section class="intro-grid">
-    <div class="intro-copy">
-      <h1>Welcome to the PAIA Lab</h1>
-      <p class="lab-name">The Perception, AI, and Autonomy Lab</p>
-      <p>We conduct research at the intersection of sensing, artificial intelligence, and autonomous systems. Our work focuses on how intelligent systems perceive and understand complex environments, integrate information from multiple sensing modalities, and make reliable decisions in the physical world.</p>
-      <p>Current interests include multimodal perception, sensor fusion, reliability-aware AI, autonomous vehicles and robots, and intelligent transportation systems.</p>
-      <p class="affiliation-line"><strong>Department of Electrical and Computer Engineering</strong><br>The University of Texas Rio Grande Valley · Edinburg, Texas</p>
-    </div>
-    <figure class="campus-figure">
-      <img src="https://www.utrgv.edu/academicaffairs/_files/images/contact/edinburg-student-services.jpg" alt="UTRGV Edinburg Campus">
-      <figcaption>UTRGV Edinburg Campus</figcaption>
-    </figure>
+  <figure class="campus-banner">
+    <img src="https://www.utrgv.edu/academicaffairs/_files/images/contact/edinburg-student-services.jpg" alt="UTRGV Edinburg campus">
+  </figure>
+
+  <section class="about-lab">
+    <h1>The Perception, AI, and Autonomy Lab</h1>
+    <p>Welcome to the PAIA Lab at The University of Texas Rio Grande Valley. Our research focuses on perception and intelligence for autonomous systems, with particular interests in multimodal sensing, sensor fusion, reliable AI, autonomous vehicles and robots, and intelligent transportation systems.</p>
+    <p>We develop methods that connect physical sensing with learning and decision-making, and we are especially interested in systems that must operate reliably in complex real-world environments.</p>
   </section>
 
-  <div class="home-columns">
-    <div>
-      <section class="classic-section">
-        <h2 class="section-title">Research</h2>
-        <div class="research-list">
-          <article class="research-entry">
-            <h3>Sensing and Multimodal Perception</h3>
-            <p>Radar, camera, LiDAR, and heterogeneous sensing for robust environmental perception, sensor fusion, and scene understanding.</p>
-          </article>
-          <article class="research-entry">
-            <h3>Reliable AI for Autonomous Systems</h3>
-            <p>Reliability-aware learning, uncertainty, calibration, and decision-making for autonomous systems operating in complex real-world environments.</p>
-          </article>
-          <article class="research-entry">
-            <h3>Intelligent Transportation and Robotics</h3>
-            <p>AI-enabled perception and autonomy for connected and automated vehicles, mobile robots, UAVs, and intelligent transportation systems.</p>
-          </article>
-        </div>
-        <a class="more-link" href="research.html">More about our research →</a>
+  <div class="home-content-grid">
+    <div class="home-primary">
+      <section class="academic-section">
+        <h2>Research Areas</h2>
+        <ul class="research-bullets">
+          <li><strong>Sensing and Multimodal Perception.</strong> Radar, camera, LiDAR, heterogeneous sensing, detection, tracking, and sensor fusion.</li>
+          <li><strong>Reliable AI for Autonomous Systems.</strong> Reliability-aware perception, uncertainty, calibration, and robust learning and decision-making.</li>
+          <li><strong>Intelligent Transportation and Robotics.</strong> Autonomous vehicles, mobile robots, UAVs, roadside sensing, and transportation applications.</li>
+        </ul>
+        <p class="section-link"><a href="research.html">Research overview</a></p>
+      </section>
+
+      <section class="academic-section">
+        <h2>Recent News</h2>
+        <ul class="news-bullets">
+          <li><span class="news-date-inline">Sep. 2026</span> The Perception, AI, and Autonomy Lab (PAIA Lab) is being established at UTRGV.</li>
+          <li><span class="news-date-inline">Sep. 2026</span> Lei Cheng joined the Department of Electrical and Computer Engineering at UTRGV as an Assistant Professor.</li>
+        </ul>
+        <p class="section-link"><a href="news.html">More news</a></p>
       </section>
     </div>
 
-    <aside>
-      <section class="classic-section">
-        <h2 class="section-title">Recent News</h2>
-        <div class="news-list">
-          <div class="news-item">
-            <div class="news-date">Sep. 2026</div>
-            <p>The Perception, AI, and Autonomy Lab (PAIA Lab) is being established at UTRGV.</p>
-          </div>
-          <div class="news-item">
-            <div class="news-date">Sep. 2026</div>
-            <p>Lei Cheng joined the Department of Electrical and Computer Engineering at UTRGV as an Assistant Professor.</p>
-          </div>
-        </div>
-        <a class="more-link" href="news.html">All news →</a>
+    <aside class="home-side">
+      <section class="side-section">
+        <h2>Openings</h2>
+        <p>We are interested in working with motivated Ph.D., M.S., and undergraduate students whose interests overlap with the lab's research.</p>
+        <p><a href="openings.html">Information for prospective students</a></p>
       </section>
 
-      <section class="opening-note">
-        <h2>Openings</h2>
-        <p>We welcome motivated students interested in perception, AI, autonomous systems, robotics, and intelligent transportation.</p>
-        <a class="more-link" href="openings.html">Current opportunities →</a>
+      <section class="side-section">
+        <h2>Links</h2>
+        <ul class="plain-links">
+          <li><a href="https://www.utrgv.edu/cecs/academics/departments/electrical-computer-engineering/">UTRGV Electrical and Computer Engineering</a></li>
+          <li><a href="https://github.com/PAIA-Lab">PAIA Lab on GitHub</a></li>
+        </ul>
       </section>
     </aside>
   </div>
@@ -100,7 +84,7 @@
       <div class="footer-name">PAIA Lab</div>
       <div>Department of Electrical and Computer Engineering<br>The University of Texas Rio Grande Valley</div>
     </div>
-    <div class="footer-right">Edinburg, Texas<br><a href="https://github.com/PAIA-Lab">GitHub</a></div>
+    <div class="footer-right">Edinburg, Texas</div>
   </div>
 </footer>
 </body>
