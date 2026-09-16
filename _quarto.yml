@@ -1,0 +1,38 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "PAIA Lab"
+  site-url: "https://paia-lab.github.io"
+  search: false
+  navbar:
+    title: "PAIA Lab"
+    collapse-below: lg
+    right:
+      - href: research.qmd
+        text: Research
+      - href: people.qmd
+        text: People
+      - href: publications.qmd
+        text: Publications
+      - href: projects.qmd
+        text: Projects
+      - href: news.qmd
+        text: News
+      - href: openings.qmd
+        text: Openings
+  page-footer:
+    border: true
+    left: "PAIA Lab · Department of Electrical and Computer Engineering"
+    center: "The University of Texas Rio Grande Valley"
+    right: "[GitHub](https://github.com/PAIA-Lab)"
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: false
+    anchor-sections: false
+    smooth-scroll: true
+    link-external-newwindow: true
