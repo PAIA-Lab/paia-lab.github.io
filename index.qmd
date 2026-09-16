@@ -1,0 +1,79 @@
+---
+title: "PAIA Lab"
+title-block-banner: false
+page-layout: full
+---
+
+::: {.hero}
+::: {}
+<p class="eyebrow">The Perception, AI, and Autonomy Lab</p>
+
+# PAIA Lab
+
+<p class="hero-title">Perception, artificial intelligence, and autonomous systems.</p>
+
+<p class="hero-deck">We study sensing, multimodal perception, learning, and intelligent decision-making for autonomous systems, with an emphasis on robust and reliable operation in real-world environments.</p>
+:::
+
+::: {.affiliation}
+**The University of Texas Rio Grande Valley**
+
+Department of Electrical and Computer Engineering  
+Edinburg, Texas
+:::
+:::
+
+::: {.section}
+::: {.section-head}
+## Research
+
+::: {}
+Our work connects physical sensing with machine intelligence to improve how autonomous systems perceive, understand, and act in complex environments.
+
+::: {.research-grid}
+::: {.research-item}
+### Sensing & Multimodal Perception
+Radar, camera, LiDAR, and heterogeneous sensing for robust environmental perception and sensor fusion.
+:::
+
+::: {.research-item}
+### Reliable AI for Autonomous Systems
+Reliability-aware learning, uncertainty, calibration, and decision-making for safety-critical autonomous platforms.
+:::
+
+::: {.research-item}
+### Intelligent Transportation & Robotics
+AI-enabled perception and autonomy for connected vehicles, mobile robots, UAVs, and transportation systems.
+:::
+:::
+:::
+:::
+:::
+
+::: {.section}
+::: {.section-head}
+## News
+
+::: {.news-list}
+::: {.news-item}
+<div class="news-date">September 2026</div>
+<div>PAIA Lab is being established at UTRGV.</div>
+:::
+
+::: {.news-item}
+<div class="news-date">September 2026</div>
+<div>Lei Cheng joined the Department of Electrical and Computer Engineering at UTRGV as an Assistant Professor.</div>
+:::
+:::
+:::
+:::
+
+::: {.openings-strip}
+## Openings
+
+::: {}
+We welcome motivated students interested in multimodal perception, autonomous systems, robotics, intelligent transportation, and applied artificial intelligence.
+
+[View current opportunities →](openings.qmd){.text-link}
+:::
+:::
