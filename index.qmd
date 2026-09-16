@@ -4,76 +4,75 @@ title-block-banner: false
 page-layout: full
 ---
 
-::: {.hero}
+::: {.intro-grid}
+::: {.intro-copy}
+# Welcome to the PAIA Lab
+
+<p class="lab-name">The Perception, AI, and Autonomy Lab</p>
+
+We conduct research at the intersection of sensing, artificial intelligence, and autonomous systems. Our work focuses on how intelligent systems perceive and understand complex environments, integrate information from multiple sensing modalities, and make reliable decisions in the physical world.
+
+Current interests include multimodal perception, sensor fusion, reliability-aware AI, autonomous vehicles and robots, and intelligent transportation systems.
+
+<p class="affiliation-line"><strong>Department of Electrical and Computer Engineering</strong><br>The University of Texas Rio Grande Valley · Edinburg, Texas</p>
+:::
+
+<figure class="campus-figure">
+<img src="https://www.utrgv.edu/academicaffairs/_files/images/contact/edinburg-student-services.jpg" alt="UTRGV Edinburg Campus">
+<figcaption>UTRGV Edinburg Campus</figcaption>
+</figure>
+:::
+
+::: {.home-columns}
 ::: {}
-<p class="eyebrow">The Perception, AI, and Autonomy Lab</p>
+::: {.classic-section}
+## Research {.section-title}
 
-# PAIA Lab
-
-<p class="hero-title">Perception, artificial intelligence, and autonomous systems.</p>
-
-<p class="hero-deck">We study sensing, multimodal perception, learning, and intelligent decision-making for autonomous systems, with an emphasis on robust and reliable operation in real-world environments.</p>
+::: {.research-list}
+::: {.research-entry}
+### Sensing and Multimodal Perception
+Radar, camera, LiDAR, and heterogeneous sensing for robust environmental perception, sensor fusion, and scene understanding.
 :::
 
-::: {.affiliation}
-**The University of Texas Rio Grande Valley**
-
-Department of Electrical and Computer Engineering  
-Edinburg, Texas
-:::
-:::
-
-::: {.section}
-::: {.section-head}
-## Research
-
-::: {}
-Our work connects physical sensing with machine intelligence to improve how autonomous systems perceive, understand, and act in complex environments.
-
-::: {.research-grid}
-::: {.research-item}
-### Sensing & Multimodal Perception
-Radar, camera, LiDAR, and heterogeneous sensing for robust environmental perception and sensor fusion.
-:::
-
-::: {.research-item}
+::: {.research-entry}
 ### Reliable AI for Autonomous Systems
-Reliability-aware learning, uncertainty, calibration, and decision-making for safety-critical autonomous platforms.
+Reliability-aware learning, uncertainty, calibration, and decision-making for autonomous systems operating in complex real-world environments.
 :::
 
-::: {.research-item}
-### Intelligent Transportation & Robotics
-AI-enabled perception and autonomy for connected vehicles, mobile robots, UAVs, and transportation systems.
-:::
-:::
-:::
+::: {.research-entry}
+### Intelligent Transportation and Robotics
+AI-enabled perception and autonomy for connected and automated vehicles, mobile robots, UAVs, and intelligent transportation systems.
 :::
 :::
 
-::: {.section}
-::: {.section-head}
-## News
+[More about our research →](research.qmd){.more-link}
+:::
+:::
+
+::: {}
+::: {.classic-section}
+## Recent News {.section-title}
 
 ::: {.news-list}
 ::: {.news-item}
-<div class="news-date">September 2026</div>
+<div class="news-date">Sep. 2026</div>
 <div>PAIA Lab is being established at UTRGV.</div>
 :::
 
 ::: {.news-item}
-<div class="news-date">September 2026</div>
+<div class="news-date">Sep. 2026</div>
 <div>Lei Cheng joined the Department of Electrical and Computer Engineering at UTRGV as an Assistant Professor.</div>
 :::
 :::
-:::
+
+[All news →](news.qmd){.more-link}
 :::
 
-::: {.openings-strip}
+::: {.opening-note}
 ## Openings
+We welcome motivated students interested in perception, AI, autonomous systems, robotics, and intelligent transportation.
 
-::: {}
-We welcome motivated students interested in multimodal perception, autonomous systems, robotics, intelligent transportation, and applied artificial intelligence.
-
-[View current opportunities →](openings.qmd){.text-link}
+[Current opportunities →](openings.qmd){.more-link}
+:::
 :::
 :::
