@@ -1,1 +1,210 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Projects at PAIA Lab"><title>Projects | PAIA Lab</title><link rel="stylesheet" href="styles.css"><script src="logo-loader.js" defer></script></head><body class="page-body"><header class="site-nav"><div class="nav-inner"><a class="nav-brand" href="index.html"><img data-paia-full-logo src="assets/paia-wordmark.webp" alt="PAIA Lab"></a><nav class="nav-links"><a href="index.html">Home</a><a href="research.html">Research</a><a href="people.html">People</a><a href="publications.html">Publications</a><a class="active" href="projects.html">Projects</a><a href="news.html">News</a><a href="openings.html">Openings</a></nav></div></header><section class="page-title-band"><div class="page-title-inner"><h1>Projects</h1><hr class="short-rule"></div></section><main class="page-main"><p class="page-intro">PAIA Lab projects connect fundamental work in sensing, perception, and artificial intelligence with autonomous systems, transportation, and robotics applications.</p><section class="project-page-item"><h2>Multimodal Perception</h2><p>Robust perception and sensor fusion using radar, cameras, LiDAR, and complementary sensing modalities for object detection, tracking, and scene understanding.</p></section><section class="project-page-item"><h2>Reliable Autonomous Systems</h2><p>Methods for improving uncertainty awareness, calibration, robustness, and decision-making in autonomous platforms operating under real-world uncertainty.</p></section><section class="project-page-item"><h2>AI for Transportation and Robotics</h2><p>Applied AI for intelligent transportation systems, roadway safety, mobile robotics, UAVs, and field-deployed sensing and autonomy.</p></section></main><footer class="site-footer"><div class="footer-inner"><div><h3>PAIA Lab</h3><p>Department of Electrical and Computer Engineering</p><p>The University of Texas Rio Grande Valley</p></div><div><h3>Links</h3><p><a href="https://github.com/PAIA-Lab">GitHub</a></p><p><a href="https://www.utrgv.edu/cecs/academics/departments/electrical-computer-engineering/">UTRGV ECE</a></p></div><div><h3>Location</h3><p>Edinburg, Texas</p></div></div></footer></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projects | PAIA Lab</title>
+    <link rel="icon" href="images/navbar/paia-logo.png" type="image/png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&family=Source+Serif+4:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/stylesheet.css">
+    <link rel="stylesheet" href="style/navbar.css">
+</head>
+<body>
+    <nav id="mi-navbar"></nav>
+    <main class="page">
+        <header class="page-hero">
+            <h1>Projects</h1>
+            <p class="lead">Selected systems in multi-sensor fusion, calibration, radar perception, tracking, and work-zone safety.</p>
+        </header>
+
+        <section class="section">
+            <div class="wrap project-list">
+                <div class="project-card">
+                    <div class="project-thumb">
+                        <div class="media-auto">
+                            <img src="images/projects/Drone_DEMO.gif" alt="DroneTraff" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-system"><i>DroneTraff</i>:</div>
+                        <h3 class="project-title">Drone-based Workzone Safety Alert System</h3>
+                        <div class="project-conf"><i><a href="https://mtrail.umd.edu/" target="_blank" rel="noopener">M-TRAIL, 2025</a></i></div>
+                        <div class="project-authors">Lei Cheng, Yaobang Gong, Xianfeng Yang, Gang-Len Chang</div>
+                        <details class="project-abs">
+                            <summary><u><b><i>Abstract</i></b></u></summary>
+                            <p class="abs-more">A drone-based work-zone safety alert system was developed, integrating state-of-the-art deep learning and computer vision to enable real-time traffic monitoring and proactive warnings.</p>
+                        </details>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-thumb">
+                        <div class="media-auto">
+                            <img src="images/projects/1004.gif" alt="CalibRefine" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-system"><i>CalibRefine</i>:</div>
+                        <h3 class="project-title">Deep Learning-Based Online Automatic Targetless LiDAR–Camera Calibration</h3>
+                        <div class="project-conf"><i>IEEE Transactions on Instrumentation and Measurement, 2025</i></div>
+                        <div class="project-authors">Lei Cheng, Lihao Guo, Tianya Zhang, Tam Bang, Austin Harris, Mustafa Hajij, Mina Sartipi, and Siyang Cao</div>
+                        <div class="project-links">
+                            <a href="https://arxiv.org/abs/2502.17648" target="_blank" rel="noopener">[PDF]</a>
+                            <span> | </span>
+                            <a href="https://github.com/radar-lab/Lidar_Camera_Automatic_Calibration" target="_blank" rel="noopener">[CODE]</a>
+                        </div>
+                        <details class="project-abs">
+                            <summary><u><b><i>Abstract</i></b></u></summary>
+                            <p class="abs-more">Accurate multi-sensor calibration is essential for deploying robust perception systems in applications such as autonomous driving and intelligent transportation. Existing LiDAR-camera calibration methods often rely on manually placed targets, preliminary parameter estimates, or intensive data preprocessing, limiting their scalability and adaptability in real-world settings. In this work, we propose a fully automatic, targetless, and online calibration framework, CalibRefine, which directly processes raw LiDAR point clouds and camera images. Our approach is divided into four stages: (1) a Common Feature Discriminator that leverages relative spatial positions, visual appearance embeddings, and semantic class cues to identify and generate reliable LiDAR-camera correspondences, (2) a coarse homography-based calibration that uses the matched feature correspondences to estimate an initial transformation between the LiDAR and camera frames, serving as the foundation for further refinement, (3) an iterative refinement to incrementally improve alignment as additional data frames become available, and (4) an attention-based refinement that addresses non-planar distortions by leveraging a Vision Transformer and cross-attention mechanisms.</p>
+                        </details>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-thumb">
+                        <div class="media-auto">
+                            <img src="images/projects/RC_MOT5.png" alt="Radar_Camera_MOT" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-system"><i>Radar_Camera_MOT</i>:</div>
+                        <h3 class="project-title">Radar-Camera Fused Multi-Object Tracking_Online Calibration and Common Feature</h3>
+                        <div class="project-conf"><i>IEEE Transactions on Intelligent Transportation Systems, 2025</i></div>
+                        <div class="project-authors">Lei Cheng, and Siyang Cao</div>
+                        <div class="project-links">
+                            <a href="http://arxiv.org/abs/2510.20794" target="_blank" rel="noopener">[PDF]</a>
+                            <span> | </span>
+                            <a href="https://github.com/radar-lab/Radar_Camera_MOT/" target="_blank" rel="noopener">[CODE]</a>
+                        </div>
+                        <details class="project-abs">
+                            <summary><u><b><i>Abstract</i></b></u></summary>
+                            <p class="abs-more">This paper presents a Multi-Object Tracking (MOT) framework that fuses radar and camera data to enhance tracking efficiency while minimizing manual interventions. Contrary to many studies that underutilize radar and assign it a supplementary role—despite its capability to provide accurate range/depth information of targets in a world 3D coordinate system—our approach positions radar in a crucial role. Meanwhile, this paper utilizes common features to enable online calibration to autonomously associate detections from radar and camera. The main contributions of this work include: (1) the development of a radar-camera fusion MOT framework that exploits online radar-camera calibration to simplify the integration of detection results from these two sensors, (2) the utilization of common features between radar and camera data to accurately derive real-world positions of detected objects, and (3) the adoption of feature matching and category-consistency checking to surpass the limitations of mere position matching in enhancing sensor association accuracy. To the best of our knowledge, we are the first to investigate the integration of radar-camera common features and their use in online calibration for achieving MOT. The efficacy of our framework is demonstrated by its ability to streamline the radar-camera mapping process and improve tracking precision, as evidenced by real-world experiments conducted in both controlled environments and actual traffic scenarios.</p>
+                        </details>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-thumb">
+                        <div class="media-auto">
+                            <img src="images/projects/transrad.png" alt="TransRAD" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-system"><i>TransRAD</i>:</div>
+                        <h3 class="project-title">Retentive Vision Transformer for Enhanced Radar Object Detection</h3>
+                        <div class="project-conf"><i>IEEE Transactions on Radar Systems, 2024</i></div>
+                        <div class="project-authors">Lei Cheng, Siyang Cao</div>
+                        <div class="project-links">
+                            <a href="https://arxiv.org/abs/2501.17977" target="_blank" rel="noopener">[PDF]</a>
+                            <span> | </span>
+                            <a href="https://github.com/radar-lab/TransRAD" target="_blank" rel="noopener">[CODE]</a>
+                        </div>
+                        <details class="project-abs">
+                            <summary><u><b><i>Abstract</i></b></u></summary>
+                            <p class="abs-more">Despite significant advancements in environment perception capabilities for autonomous driving and intelligent robotics, cameras and LiDARs remain notoriously unreliable in low-light conditions and adverse weather, which limits their effectiveness. Radar serves as a reliable and low-cost sensor that can effectively complement these limitations. However, radar-based object detection has been underexplored due to the inherent weaknesses of radar data, such as low resolution, high noise, and lack of visual information. In this paper, we present TransRAD, a novel 3D radar object detection model designed to address these challenges by leveraging the Retentive Vision Transformer (RMT) to more effectively learn features from information-dense radar Range-Azimuth-Doppler (RAD) data. Our approach leverages the Retentive Manhattan Self-Attention (MaSA) mechanism provided by RMT to incorporate explicit spatial priors, thereby enabling more accurate alignment with the spatial saliency characteristics of radar targets in RAD data and achieving precise 3D radar detection across Range-Azimuth-Doppler dimensions. Furthermore, we propose Location-Aware NMS to effectively mitigate the common issue of duplicate bounding boxes in deep radar object detection.</p>
+                        </details>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-thumb">
+                        <div class="media-auto">
+                            <img src="images/projects/Arind_mot.png" alt="RC_tracking" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-system"><i>RC_tracking</i>:</div>
+                        <h3 class="project-title">Robust multiobject tracking using mmwave radar-camera sensor fusion</h3>
+                        <div class="project-conf"><i>IEEE Sensors Letters, 2022</i></div>
+                        <div class="project-authors">Arindam Sengupta, Lei Cheng, Siyang Cao</div>
+                        <div class="project-links">
+                            <a href="https://ieeexplore.ieee.org/abstract/document/9916096" target="_blank" rel="noopener">[PDF]</a>
+                        </div>
+                        <details class="project-abs">
+                            <summary><u><b><i>Abstract</i></b></u></summary>
+                            <p class="abs-more">With the recent hike in the autonomous and automotive industries, sensor-fusion-based perception has garnered significant attention for multiobject classification and tracking applications. Furthering our previous work on sensor-fusion-based multiobject classification, this letter presents a robust tracking framework using a high-level monocular-camera and millimeter wave radar sensor-fusion. The proposed method aims to improve the localization accuracy by leveraging the radar's depth and the camera's cross-range resolutions using decision-level sensor fusion and make the system robust by continuously tracking objects despite single sensor failures using a tri-Kalman filter setup. The camera's intrinsic calibration parameters and the height of the sensor placement are used to estimate a birds-eye view of the scene, which in turn aids in estimating 2-D position of the targets from the camera. The radar and camera measurements in a given frame is associated using the Hungarian algorithm. Finally, a tri-Kalman filter-based framework is used as the tracking approach. The proposed approach offers promising MOTA and MOTP metrics including significantly low missed detection rates that could aid large-scale and small-scale autonomous or robotics applications with safe perception.</p>
+                        </details>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-thumb">
+                        <div class="media-auto">
+                            <img src="images/projects/Picture2.png" alt="RC_MOT" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-system"><i>RC_MOT</i>:</div>
+                        <h3 class="project-title">Deep Learning Based Robust Multi-Object Tracking via Fusion of mmWave Radar and Camera Sensors</h3>
+                        <div class="project-conf"><i>IEEE Transactions on Intelligent Transportation Systems, 2024</i></div>
+                        <div class="project-authors">Lei Cheng, Arindam Sengupta, Siyang Cao</div>
+                        <div class="project-links">
+                            <a href="https://arxiv.org/abs/2407.08049" target="_blank" rel="noopener">[PDF]</a>
+                        </div>
+                        <details class="project-abs">
+                            <summary><u><b><i>Abstract</i></b></u></summary>
+                            <p class="abs-more">Autonomous driving holds great promise in addressing traffic safety concerns by leveraging artificial intelligence and sensor technology. Multi-Object Tracking plays a critical role in ensuring safer and more efficient navigation through complex traffic scenarios. This paper presents a novel deep learning-based method that integrates radar and camera data to enhance the accuracy and robustness of Multi-Object Tracking in autonomous driving systems. The proposed method leverages a Bi-directional Long Short-Term Memory network to incorporate long-term temporal information and improve motion prediction. An appearance feature model inspired by FaceNet is used to establish associations between objects across different frames, ensuring consistent tracking. A tri-output mechanism is employed, consisting of individual outputs for radar and camera sensors and a fusion output, to provide robustness against sensor failures and produce accurate tracking results.</p>
+                        </details>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-thumb">
+                        <div class="media-auto">
+                            <img src="images/projects/1004_3.gif" alt="3D Radar and Camera Co-Calibration" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-system"><i>3D Radar and Camera Co-Calibration</i>:</div>
+                        <h3 class="project-title">A Flexible and Accurate Method for Target-based Extrinsic Calibration</h3>
+                        <div class="project-conf"><i>IEEE Radar Conference (RadarConf23)</i></div>
+                        <div class="project-authors">Lei Cheng, Arindam Sengupta, and Siyang Cao</div>
+                        <div class="project-links">
+                            <a href="https://arxiv.org/abs/2307.15264" target="_blank" rel="noopener">[PDF]</a>
+                            <span> | </span>
+                            <a href="https://github.com/radar-lab/Online-Targetless-Radar-Camera-Extrinsic-Calibration" target="_blank" rel="noopener">[CODE]</a>
+                        </div>
+                        <details class="project-abs">
+                            <summary><u><b><i>Abstract</i></b></u></summary>
+                            <p class="abs-more">Advances in autonomous driving are inseparable from sensor fusion. Heterogeneous sensors are widely used for sensor fusion due to their complementary properties, with radar and camera being the most equipped sensors. Intrinsic and extrinsic calibration are essential steps in sensor fusion. The extrinsic calibration, independent of the sensor's own parameters, and performed after the sensors are installed, greatly determines the accuracy of sensor fusion. Many target-based methods require cumbersome operating procedures and well-designed experimental conditions, making them extremely challenging. To this end, we propose a flexible, easy-to-reproduce and accurate method for extrinsic calibration of 3D radar and camera. The proposed method does not require a specially designed calibration environment, and instead places a single corner reflector (CR) on the ground to iteratively collect radar and camera data simultaneously using Robot Operating System (ROS), and obtain radar-camera point correspondences based on their timestamps, and then use these point correspondences as input to solve the perspective-n-point (PnP) problem, and finally get the extrinsic calibration matrix. Also, RANSAC is used for robustness and the Levenberg-Marquardt (LM) nonlinear optimization algorithm is used for accuracy.</p>
+                        </details>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-thumb">
+                        <div class="media-auto">
+                            <img src="images/projects/online_calib.gif" alt="Online_RC_Calib" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-system"><i>Online_RC_Calib</i>:</div>
+                        <h3 class="project-title">Online Targetless Radar Camera Extrinsic Calibration Based on the Common Features of Radar and Camera</h3>
+                        <div class="project-conf"><i>IEEE National Aerospace and Electronics Conference (NAECON23)</i></div>
+                        <div class="project-authors">Lei Cheng, and Siyang Cao</div>
+                        <div class="project-links">
+                            <a href="https://arxiv.org/abs/2309.00787" target="_blank" rel="noopener">[PDF]</a>
+                            <span> | </span>
+                            <a href="https://github.com/radar-lab/Online-Targetless-Radar-Camera-Extrinsic-Calibration" target="_blank" rel="noopener">[CODE]</a>
+                        </div>
+                        <details class="project-abs">
+                            <summary><u><b><i>Abstract</i></b></u></summary>
+                            <p class="abs-more">Sensor fusion is essential for autonomous driving and autonomous robots, and radar-camera fusion systems have gained popularity due to their complementary sensing capabilities. However, accurate calibration between these two sensors is crucial to ensure effective fusion and improve overall system performance. Calibration involves intrinsic and extrinsic calibration, with the latter being particularly important for achieving accurate sensor fusion. Unfortunately, many target-based calibration methods require complex operating procedures and well-designed experimental conditions, posing challenges for researchers attempting to reproduce the results. To address this issue, we introduce a novel approach that leverages deep learning to extract a common feature from raw radar data (i.e., Range-Doppler-Angle data) and camera images. Instead of explicitly representing these common features, our method implicitly utilizes these common features to match identical objects from both data sources. Specifically, the extracted common feature serves as an example to demonstrate an online targetless calibration method between the radar and camera systems. The estimation of the extrinsic transformation matrix is achieved through this feature-based approach. To enhance the accuracy and robustness of the calibration, we apply the RANSAC and Levenberg-Marquardt (LM) nonlinear optimization algorithm for deriving the matrix.</p>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="site-footer"></div>
+    <script type="text/javascript" src="static/navbar.js"></script>
+    <script>showNavbar("projects"); showFooter();</script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

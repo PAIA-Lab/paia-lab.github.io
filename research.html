@@ -1,1 +1,106 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Research at PAIA Lab"><title>Research | PAIA Lab</title><link rel="stylesheet" href="styles.css"><script src="logo-loader.js" defer></script></head><body class="page-body"><header class="site-nav"><div class="nav-inner"><a class="nav-brand" href="index.html"><img data-paia-full-logo src="assets/paia-wordmark.webp" alt="PAIA Lab"></a><nav class="nav-links"><a href="index.html">Home</a><a class="active" href="research.html">Research</a><a href="people.html">People</a><a href="publications.html">Publications</a><a href="projects.html">Projects</a><a href="news.html">News</a><a href="openings.html">Openings</a></nav></div></header><section class="page-title-band"><div class="page-title-inner"><h1>Research</h1><hr class="short-rule"></div></section><main class="page-main"><p class="page-intro">The PAIA Lab develops perception and intelligence for autonomous systems operating in complex, uncertain, and safety-critical environments. Our research connects physical sensing, machine learning, and decision-making with real-world transportation and robotic systems.</p><section class="academic-block"><h2>Sensing and Multimodal Perception</h2><p>We investigate radar, camera, LiDAR, and heterogeneous sensing for robust environmental perception. Topics include object detection and tracking, sensor fusion, scene understanding, and perception under challenging operating conditions.</p><h3>Representative directions</h3><ul><li>Radar-camera-LiDAR fusion</li><li>Multi-object detection and tracking</li><li>Sensor calibration and cross-modal alignment</li><li>Reliability-aware perception</li></ul></section><section class="academic-block"><h2>Reliable AI for Autonomous Systems</h2><p>We study methods that improve the reliability and trustworthiness of learning-based autonomous systems, including uncertainty, calibration, robustness, and decision-making under imperfect perception.</p><h3>Representative directions</h3><ul><li>Uncertainty-aware learning and perception</li><li>Reliability assessment and calibration</li><li>Robust multimodal learning</li><li>Learning-based decision support for autonomy</li></ul></section><section class="academic-block"><h2>Intelligent Transportation and Robotics</h2><p>We apply AI and perception to autonomous vehicles, mobile robots, UAVs, roadway sensing, and intelligent transportation systems, with an emphasis on field-deployable systems and practical transportation problems.</p><h3>Representative directions</h3><ul><li>Autonomous and connected vehicles</li><li>Mobile robots and UAV perception</li><li>Roadway sensing and transportation safety</li><li>Edge AI for real-world autonomous systems</li></ul></section></main><footer class="site-footer"><div class="footer-inner"><div><h3>PAIA Lab</h3><p>Department of Electrical and Computer Engineering</p><p>The University of Texas Rio Grande Valley</p></div><div><h3>Links</h3><p><a href="https://github.com/PAIA-Lab">GitHub</a></p><p><a href="https://www.utrgv.edu/cecs/academics/departments/electrical-computer-engineering/">UTRGV ECE</a></p></div><div><h3>Location</h3><p>Edinburg, Texas</p></div></div></footer></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Research | PAIA Lab</title>
+    <link rel="icon" href="images/navbar/paia-logo.png" type="image/png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&family=Source+Serif+4:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/stylesheet.css">
+    <link rel="stylesheet" href="style/navbar.css">
+</head>
+<body>
+    <nav id="mi-navbar"></nav>
+    <main class="page">
+        <header class="page-hero">
+            <h1>Research</h1>
+            <p class="lead">From heterogeneous sensing to trustworthy autonomous intelligence: perception, reasoning, and decision-making under uncertainty.</p>
+        </header>
+
+        <section class="section">
+            <div class="wrap">
+                <div class="topic-scope">
+                    <h2 class="topic-scope-title">Research Topics</h2>
+                    <p class="topic-scope-intro">We work on research topics including, but not limited to:</p>
+                    <ul class="topic-list">
+                        <li>Multimodal sensing, data processing, and sensor fusion</li>
+                        <li>Deep learning-based perception for scene understanding</li>
+                        <li>Autonomous driving and intelligent transportation systems</li>
+                        <li>Robotics, embodied intelligence, and physical AI</li>
+                        <li>Multimodal foundation models and agentic AI</li>
+                        <li>World models and spatial intelligence for closed-loop autonomy</li>
+                        <li>Reliable, trustworthy, and safety-aware AI for autonomous systems</li>
+                        <li>Application-driven AI for real-world sensing and autonomy</li>
+                    </ul>
+                    <div class="topic-chips">
+                        <span>Sensor Fusion</span>
+                        <span>Deep Perception</span>
+                        <span>Robotics</span>
+                        <span>Physical AI</span>
+                        <span>Multimodal AI</span>
+                        <span>Agentic AI</span>
+                        <span>World Models</span>
+                        <span>Applied AI</span>
+                        <span>Autonomous Systems</span>
+                    </div>
+                </div>
+
+                <figure class="overview-figure">
+                    <img src="images/research/overview.png" alt="Research overview of PAIA Lab">
+                </figure>
+
+                <div class="research-bridge">
+                    <p>These topics share one goal: the scientific and computational foundations for reliable autonomous intelligence in the physical world. They also share one difficulty. Sensors fail, calibration drifts, observations are incomplete, and rare events dominate safety outcomes, so perception, reasoning, and action cannot be studied in isolation.</p>
+                    <p>We therefore pursue the work above along three connected directions, each carrying the loop one step further: from sensing, to understanding, to decision-making.</p>
+                </div>
+
+                <article class="research-block" id="perception">
+                    <h2>Multi-Sensor Fusion and Deep Perception</h2>
+                    <p>We develop reliable multimodal perception methods that transform heterogeneous sensor data into robust situational awareness. This direction integrates Camera, Radar, LiDAR, GNSS, and other sensing modalities through calibration, spatial alignment, temporal synchronization, uncertainty modeling, adaptive fusion, and deep representation learning.</p>
+                    <p>Beyond improving accuracy on standard benchmarks, our goal is to create perception systems that understand their own reliability, detect degradation, and remain functional under occlusion, adverse weather, sensor faults, domain shift, and real-time deployment constraints.</p>
+                    <p><strong>Recent articles on this topic:</strong></p>
+                    <ol class="related-list">
+                        <li>Lei Cheng, Lihao Guo, Tianya Zhang, Tam Bang, Austin Harris, Mustafa Hajij, Mina Sartipi, and Siyang Cao. “CalibRefine: Deep Learning-Based Online Automatic Targetless LiDAR–Camera Calibration with Iterative and Attention-Driven Post-Refinement.” <em>IEEE Transactions on Instrumentation and Measurement</em>, 2026.</li>
+                        <li>Lei Cheng and Siyang Cao. “TransRAD: Retentive Vision Transformer for Enhanced Radar Object Detection.” <em>IEEE Transactions on Radar Systems</em>, 2025.</li>
+                        <li>Lei Cheng, Arindam Sengupta, and Siyang Cao. “3D Radar and Camera Co-Calibration: A Flexible and Accurate Method for Target-based Extrinsic Calibration.” <em>IEEE Radar Conference (RadarConf23)</em>, 2023.</li>
+                    </ol>
+                </article>
+
+                <article class="research-block" id="multimodal">
+                    <h2>Multimodal AI for Autonomous Systems</h2>
+                    <p>We explore how multimodal AI foundation models can enable a new generation of autonomous systems that are more generalizable, context-aware, and adaptive. This direction studies how vision, geometry, motion, language, and semantics can be unified into physically grounded representations that connect low-level sensing with high-level reasoning.</p>
+                    <p>Rather than treating foundation models as black-box predictors, we aim to constrain them with sensor evidence, scene geometry, temporal dynamics, uncertainty estimation, and physical plausibility. The long-term vision is foundation-model-enabled autonomy for open-world perception, semantic reasoning, human–system communication, and safe decision support.</p>
+                    <p><strong>Recent articles on this topic:</strong></p>
+                    <ol class="related-list">
+                        <li>Lei Cheng and Siyang Cao. “Radar-Camera Fused Multi-Object Tracking: Online Calibration and Common Feature.” <em>IEEE Transactions on Intelligent Transportation Systems</em>, 2026.</li>
+                        <li>Lei Cheng, Arindam Sengupta, and Siyang Cao. “Deep Learning-Based Robust Multi-Object Tracking via Fusion of mmWave Radar and Camera Sensors.” <em>IEEE Transactions on Intelligent Transportation Systems</em>, 2024.</li>
+                        <li>Lei Cheng and Siyang Cao. “Online Targetless Radar–Camera Extrinsic Calibration Based on the Common Features of Radar and Camera.” <em>IEEE National Aerospace and Electronics Conference (NAECON)</em>, 2023.</li>
+                    </ol>
+                </article>
+
+                <article class="research-block" id="autonomy">
+                    <h2>Intelligent Autonomous Systems: Prediction, Control, and Planning</h2>
+                    <p>Reliable perception matters only when it leads to better decisions. We study how perception, uncertainty, and scene understanding can be translated into risk-aware prediction, control, and planning for intelligent autonomous systems.</p>
+                    <p>In transportation and autonomous driving, this includes predictive safety systems, variable speed limits, advanced safety warnings, uncertainty-aware motion prediction, and planning under occlusion, poor visibility, and rare events. In robotics and related settings, it includes anomaly-aware monitoring, intent inference, and adaptive operation in human-centered environments.</p>
+                    <p><strong>Recent articles on this topic:</strong></p>
+                    <ol class="related-list">
+                        <li>Tam Bang, Hoang H. Nguyen, Deponker Sarker Depto, Lei Cheng, Lihao Guo, Siyang Cao, Tianya Zhang, Austin Harris, and Mina Sartipi. “Real-Time Edge-Based Multi-Sensor Fusion for Vulnerable Road User Safety at Urban Intersections.” <em>Transportation Research Board (TRB) Annual Meeting</em>, 2026.</li>
+                        <li>Tianya Zhang, Lei Cheng, Tam Bang, Lihao Guo, Mustafa Hajij, Siyang Cao, Austin Harris, and Mina Sartipi. “Roadside Sensor Systems for Vulnerable Road User Protection: A Review of Methods and Applications.” <em>IEEE Access</em>, 2025.</li>
+                        <li>Lei Cheng, Yaobang Gong, Xianfeng Yang, and Gang-Len Chang. “Drone-based Workzone Safety Alert System.” <em>M-TRAIL</em>, 2025.</li>
+                    </ol>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <div id="site-footer"></div>
+    <script type="text/javascript" src="static/navbar.js"></script>
+    <script>showNavbar("research"); showFooter();</script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

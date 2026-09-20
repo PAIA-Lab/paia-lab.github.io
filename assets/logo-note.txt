@@ -1,1 +1,0 @@
-Full PAIA logo asset is stored separately as a binary WebP file for site branding.

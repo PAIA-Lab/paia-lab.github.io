@@ -1,0 +1,290 @@
+/* PAIA Lab navigation and footer */
+
+.navbar {
+    background-color: #ffffff;
+    z-index: 20;
+    min-height: 104px;
+    padding: 0.5rem 4%;
+    box-shadow: 0 1px 0 rgba(15, 31, 58, 0.08), 0 8px 24px rgba(15, 31, 58, 0.04);
+}
+
+.navbar-brand {
+    margin-right: 1.5rem;
+}
+
+.navbar-brand img {
+    height: 76px;
+    width: auto;
+    max-width: 340px;
+    object-fit: contain;
+}
+
+.navbar-toggler {
+    border: 1px solid #d7dde6;
+    padding: 6px 8px;
+}
+
+.menu-bars,
+.menu-bars::before,
+.menu-bars::after {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: #0b1f3a;
+    border-radius: 2px;
+}
+
+.menu-bars {
+    position: relative;
+}
+
+.menu-bars::before,
+.menu-bars::after {
+    content: "";
+    position: absolute;
+    left: 0;
+}
+
+.menu-bars::before {
+    top: -6px;
+}
+
+.menu-bars::after {
+    top: 6px;
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+    background: #ffffff;
+}
+
+.navbar-nav {
+    align-items: center;
+}
+
+.nav-item {
+    width: auto;
+}
+
+.navbar a.nav-link {
+    color: #1b2a41;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    padding: 0.6rem 0.9rem;
+    border-bottom: 3px solid transparent;
+}
+
+.navbar a.nav-link:hover,
+.navbar a.nav-link#current {
+    color: #0b1f3a;
+    border-bottom-color: #e85a20;
+}
+
+.site-footer {
+    background: #0b1f3a;
+    color: #e8edf4;
+    padding: 56px 6% 28px;
+}
+
+.site-footer h4 {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.site-footer h4::after {
+    content: "";
+    display: block;
+    width: 36px;
+    height: 3px;
+    margin-top: 8px;
+    background: #e85a20;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: auto max-content 1fr max-content auto;
+    column-gap: 28px;
+    row-gap: 20px;
+    align-items: start;
+}
+
+.footer-end {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+
+.footer-links {
+    justify-self: start;
+    white-space: nowrap;
+}
+
+.footer-location {
+    justify-self: start;
+    margin-left: max(0px, calc((100% - 420px) / 2));
+    width: min(510px, calc(100% - max(0px, (100% - 420px) / 2)));
+}
+
+.footer-contact {
+    justify-self: end;
+}
+
+.footer-seal {
+    height: 118px;
+    width: auto;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.footer-logomap {
+    height: 122px;
+    width: auto;
+}
+
+.footer-github-block {
+    width: 17.8em;
+    max-width: 100%;
+}
+
+.footer-github-block p {
+    white-space: nowrap;
+}
+
+.footer-wordmark-link {
+    display: block;
+    margin-top: 10px;
+    border-bottom: none;
+}
+
+.footer-wordmark-link:hover {
+    border-bottom: none;
+}
+
+.footer-utrgv {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.site-footer a {
+    color: #d5deea;
+    border-bottom: 1px solid transparent;
+}
+
+.site-footer a:hover {
+    color: #ffffff;
+    text-decoration: none;
+    border-bottom-color: #e85a20;
+}
+
+.site-footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.site-footer li {
+    margin-bottom: 10px;
+}
+
+.site-footer p {
+    margin-bottom: 8px;
+    color: #c5d0de;
+    font-size: 15px;
+}
+
+.footer-map {
+    width: 100%;
+    min-height: 220px;
+    border: 0;
+    border-radius: 8px;
+}
+
+.footer-bottom {
+    margin-top: 36px;
+    padding-top: 18px;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+    color: #9aabc0;
+    font-size: 13px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .footer-grid {
+        gap: 24px;
+    }
+
+    .footer-seal {
+        height: 100px;
+    }
+
+    .footer-logomap {
+        height: 90px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .navbar-collapse {
+        width: 100%;
+        margin-top: 8px;
+        padding: 8px 4px 16px;
+        border-top: 1px solid #dde3ec;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .navbar {
+        min-height: 92px;
+    }
+
+    .navbar-brand img {
+        height: 64px;
+        max-width: 260px;
+    }
+
+    .navbar-nav {
+        align-items: flex-start;
+        padding: 12px 0 18px;
+        width: 100%;
+    }
+
+    .navbar a.nav-link {
+        font-size: 19px;
+        padding: 10px 0;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .footer-links,
+    .footer-contact,
+    .footer-location {
+        justify-self: start;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .footer-end {
+        justify-content: flex-start;
+        align-self: start;
+    }
+
+    .footer-seal {
+        height: 88px;
+    }
+
+    .footer-logomap {
+        height: 82px;
+    }
+}

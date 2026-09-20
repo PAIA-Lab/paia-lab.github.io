@@ -1,9 +1,0 @@
----
-title: "Publications"
----
-
-Selected publications from PAIA Lab and its members will be maintained here.
-
-::: {.note}
-The publication list is being prepared. The final version will include links to papers, preprints, code, and project pages where available.
-:::

@@ -1,115 +1,118 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="The Perception, AI, and Autonomy Lab (PAIA Lab) at The University of Texas Rio Grande Valley">
-  <title>PAIA Lab | UTRGV</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="logo-loader.js" defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PAIA Lab | Perception, AI, and Autonomy Lab</title>
+    <link rel="icon" href="images/navbar/paia-logo.png" type="image/png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&family=Source+Serif+4:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style/stylesheet.css">
+    <link rel="stylesheet" href="style/navbar.css">
 </head>
-<body class="home-body">
-<header class="site-nav">
-  <div class="nav-inner">
-    <a class="nav-brand" href="index.html" aria-label="PAIA Lab home"><img data-paia-full-logo src="assets/paia-wordmark.webp" alt="PAIA Lab"></a>
-    <nav class="nav-links" aria-label="Main navigation">
-      <a class="active" href="index.html">Home</a>
-      <a href="research.html">Research</a>
-      <a href="people.html">People</a>
-      <a href="publications.html">Publications</a>
-      <a href="projects.html">Projects</a>
-      <a href="news.html">News</a>
-      <a href="openings.html">Openings</a>
-    </nav>
-  </div>
-</header>
+<body>
+  <nav id="mi-navbar"></nav>
 
-<section class="home-hero">
-  <div class="hero-inner">
-    <img data-paia-full-logo class="hero-logo hero-logo-full" src="assets/paia-wordmark.webp" alt="PAIA Lab — Perception, AI, and Autonomy Lab">
-    <hr class="hero-rule">
-    <p class="hero-affiliation"><strong>Department of Electrical and Computer Engineering</strong><br>The University of Texas Rio Grande Valley · Edinburg, Texas</p>
-  </div>
-</section>
-
-<section class="home-welcome">
-  <div class="inner">
-    <h1>Welcome to PAIA Lab</h1>
-    <p>The Perception, AI, and Autonomy Lab studies intelligent systems that must perceive, understand, and act in complex real-world environments.</p>
-    <p>Our work spans multimodal sensing and sensor fusion, reliable artificial intelligence, autonomous vehicles and robots, and intelligent transportation systems.</p>
-  </div>
-</section>
-
-<section class="home-news">
-  <div class="home-section-inner">
-    <h2 class="home-section-title">News</h2>
-    <div class="news-cards">
-      <article class="news-card">
-        <div class="news-card-media"><img class="photo" src="https://www.utrgv.edu/academicaffairs/_files/images/contact/edinburg-student-services.jpg" alt="UTRGV Edinburg campus"></div>
-        <div class="news-card-body">
-          <h2>PAIA Lab at UTRGV</h2>
-          <p>The Perception, AI, and Autonomy Lab is being established in the Department of Electrical and Computer Engineering at UTRGV.</p>
-          <p class="news-date">September 2026</p>
+    <section class="hero" style="background-image: url('images/campus/utrgv-east.jpg');">
+        <div class="hero-card">
+            <img src="images/brand/paia-logo.png" alt="PAIA Lab logo">
+            <p>Department of Electrical and Computer Engineering · UTRGV</p>
         </div>
-      </article>
-      <article class="news-card">
-        <div class="news-card-media"><img data-paia-full-logo class="logo logo-full" src="assets/paia-wordmark.webp" alt="PAIA Lab logo"></div>
-        <div class="news-card-body">
-          <h2>New Faculty</h2>
-          <p>Lei Cheng joined UTRGV as an Assistant Professor in Electrical and Computer Engineering.</p>
-          <p class="news-date">September 2026</p>
+    </section>
+
+    <section class="section section-alt">
+        <div class="wrap welcome-grid">
+            <div class="welcome-copy">
+                <h2 class="section-title">Welcome to PAIA Lab</h2>
+                <p><strong class="lab-fullname">The <span class="acronym-p">P</span>erception, <span class="acronym-a">A</span><span class="acronym-i">I</span>, and <span class="acronym-a">A</span>utonomy Lab (<span class="acronym-p">P</span><span class="acronym-a">A</span><span class="acronym-i">I</span><span class="acronym-a">A</span> <span class="acronym-lab">Lab</span>)</strong> is in the Department of Electrical and Computer Engineering at The University of Texas Rio Grande Valley. We build the scientific and computational foundations for reliable autonomous intelligence in the physical world.</p>
+                <p>Autonomy is not merely a perception problem. It is a closed-loop challenge: machines must sense uncertain environments, understand evolving situations, and make timely decisions with imperfect information. Our work advances the perception–understanding–decision loop by unifying multi-sensor fusion, reliability-aware perception, multimodal deep learning, and AI foundation models with downstream prediction, control, and planning.</p>
+                <p>The central question that drives the lab is: <em>How can autonomous systems perceive, reason, and act reliably when the world is noisy, dynamic, and only partially observable?</em></p>
+            </div>
+            <div class="welcome-photo">
+                <img src="images/campus/utrgv-palms.jpg" alt="UTRGV Brownsville campus walkway">
+          </div>
         </div>
-      </article>
-    </div>
-    <p class="home-more"><a href="news.html">View all news</a></p>
-  </div>
-</section>
+    </section>
 
-<section class="home-research">
-  <div class="home-section-inner">
-    <h2 class="home-section-title">Research Topics</h2>
-    <div class="research-topics">
-      <article class="research-topic">
-        <h3>Sensing &amp; Multimodal Perception</h3>
-        <p>Radar, camera, LiDAR, detection, tracking, scene understanding, and heterogeneous sensor fusion.</p>
-      </article>
-      <article class="research-topic">
-        <h3>Reliable AI for Autonomous Systems</h3>
-        <p>Reliability-aware perception, uncertainty, calibration, robust learning, and decision-making.</p>
-      </article>
-      <article class="research-topic">
-        <h3>Intelligent Transportation &amp; Robotics</h3>
-        <p>Autonomous vehicles, mobile robots, UAVs, roadside sensing, and field-deployed AI systems.</p>
-      </article>
-    </div>
-    <p class="home-more"><a href="research.html">Learn more about our research</a></p>
-  </div>
-</section>
+    <section class="section">
+        <div class="wrap">
+            <div class="section-head">
+                <h2 class="section-title">News</h2>
+                <a class="more-link" href="news.html">All news</a>
+            </div>
+            <div class="news-list">
+                <article class="news-item">
+                    <time datetime="2025-12">December 2025</time>
+                    <h3>PI award from Maryland DOT SHA</h3>
+                    <p>Awarded a $150K research project as PI through M-TRAIL, funded by the Maryland Department of Transportation SHA.</p>
+                </article>
+                <article class="news-item">
+                    <time datetime="2025-11">November 2025</time>
+                    <h3>Paper accepted to IEEE T-IM</h3>
+                    <p>CalibRefine accepted to <em>IEEE Transactions on Instrumentation and Measurement</em>.</p>
+                </article>
+                <article class="news-item">
+                    <time datetime="2025-10">October 2025</time>
+                    <h3>Paper accepted to IEEE T-ITS</h3>
+                    <p>Radar-camera fused multi-object tracking accepted to <em>IEEE Transactions on Intelligent Transportation Systems</em>.</p>
+                </article>
+                <article class="news-item">
+                    <time datetime="2025-08">August 2025</time>
+                    <h3>Joined UMD as Faculty Assistant</h3>
+                    <p>Dr. Lei Cheng joined the University of Maryland, College Park as a Faculty Assistant in CEE / MTI.</p>
+                </article>
+          </div>
+        </div>
+    </section>
 
-<footer class="home-footer">
-  <div class="footer-inner">
-    <div>
-      <h3>Links</h3>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="research.html">Research</a></li>
-        <li><a href="people.html">People</a></li>
-        <li><a href="publications.html">Publications</a></li>
-        <li><a href="https://github.com/PAIA-Lab">GitHub</a></li>
-      </ul>
-    </div>
-    <div>
-      <h3>Location</h3>
-      <p>The University of Texas Rio Grande Valley</p>
-      <p>Edinburg, Texas</p>
-      <p><a href="https://www.utrgv.edu/cecs/academics/departments/electrical-computer-engineering/">Electrical and Computer Engineering</a></p>
-    </div>
-    <div>
-      <h3>PAIA Lab</h3>
-      <img data-paia-full-logo class="footer-logo footer-logo-full" src="assets/paia-wordmark.webp" alt="PAIA Lab">
-    </div>
-  </div>
-  <div class="footer-bottom">© 2026 PAIA Lab · The University of Texas Rio Grande Valley</div>
-</footer>
+    <section class="section section-alt">
+        <div class="wrap">
+            <div class="section-head">
+                <h2 class="section-title">Research Topics</h2>
+                <a class="more-link" href="research.html">Research</a>
+            </div>
+            <div class="topic-grid">
+                <article class="topic-card">
+                    <h3><a href="research.html#perception">Sensor-Fused Perception</a></h3>
+                    <p>Reliable multimodal perception that turns Camera, Radar, LiDAR, and GNSS observations into robust situational awareness, even when sensors degrade.</p>
+                </article>
+                <article class="topic-card">
+                    <h3><a href="research.html#multimodal">Multimodal AI</a></h3>
+                    <p>Foundation-model-enabled autonomy that unifies vision, geometry, motion, language, and semantics into physically grounded representations.</p>
+                </article>
+                <article class="topic-card">
+                    <h3><a href="research.html#autonomy">Autonomous Systems</a></h3>
+                    <p>Risk-aware prediction, control, and planning that translates perception and uncertainty into safer decisions for driving, robotics, and transportation.</p>
+                </article>
+          </div>
+        </div>
+    </section>
+
+    <section class="section" id="acknowledgements">
+        <div class="wrap">
+            <div class="section-head">
+                <h2 class="section-title">Acknowledgements</h2>
+            </div>
+            <p class="ack-note">We gratefully acknowledge the agencies and industry partners that have supported research projects the PI has contributed to.</p>
+            <div class="ack-grid">
+                <div class="ack-logo is-tall"><img src="images/funding/usdot.svg" alt="U.S. Department of Transportation"></div>
+                <div class="ack-logo"><img src="images/funding/fhwa.jpg" alt="Federal Highway Administration"></div>
+                <div class="ack-logo"><img src="images/funding/nitc.png" alt="National Institute for Transportation and Communities"></div>
+                <div class="ack-logo is-wide"><img src="images/funding/mdot.png" alt="Maryland Department of Transportation"></div>
+                <div class="ack-logo is-slim"><img src="images/funding/tucson-dot-wide.png" alt="City of Tucson Department of Transportation and Mobility"></div>
+                <div class="ack-logo is-wide"><img src="images/funding/sony.svg" alt="Sony"></div>
+            </div>
+        </div>
+    </section>
+
+    <div id="site-footer"></div>
+
+  <script type="text/javascript" src="static/navbar.js"></script>
+    <script>showNavbar("home"); showFooter();</script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>
