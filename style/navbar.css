@@ -4,7 +4,7 @@
     background-color: #ffffff;
     z-index: 20;
     min-height: 104px;
-    padding: 0.5rem 4%;
+    padding: 0.5rem var(--gutter);
     box-shadow: 0 1px 0 rgba(15, 31, 58, 0.08), 0 8px 24px rgba(15, 31, 58, 0.04);
 }
 
@@ -84,7 +84,7 @@
 .site-footer {
     background: #0b1f3a;
     color: #e8edf4;
-    padding: 56px 6% 28px;
+    padding: 56px var(--gutter) 28px;
 }
 
 .site-footer h4 {
@@ -107,17 +107,20 @@
 
 .footer-grid {
     display: grid;
-    grid-template-columns: auto max-content 1fr max-content auto;
-    column-gap: 28px;
+    grid-template-columns: max-content minmax(0, 1fr) max-content auto;
+    column-gap: 52px;
     row-gap: 20px;
     align-items: start;
 }
 
-.footer-end {
+.footer-brand {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    gap: 16px;
+    /* Sit below the column headings without hanging past the Contact text */
     align-self: center;
+    margin-bottom: 24px;
 }
 
 .footer-links {
@@ -126,9 +129,7 @@
 }
 
 .footer-location {
-    justify-self: start;
-    margin-left: max(0px, calc((100% - 420px) / 2));
-    width: min(510px, calc(100% - max(0px, (100% - 420px) / 2)));
+    min-width: 0;
 }
 
 .footer-contact {
@@ -136,19 +137,19 @@
 }
 
 .footer-seal {
-    height: 118px;
+    height: 88px;
     width: auto;
     background: #fff;
     border-radius: 50%;
 }
 
 .footer-logomap {
-    height: 122px;
+    height: 86px;
     width: auto;
 }
 
 .footer-github-block {
-    width: 17.8em;
+    width: 14.2em;
     max-width: 100%;
 }
 
@@ -201,7 +202,10 @@
 
 .footer-map {
     width: 100%;
-    min-height: 220px;
+    min-height: 215px;
+    /* Nudge down so the map's top edge meets the cap height of the first
+       Links entry rather than its line box */
+    margin-top: 8px;
     border: 0;
     border-radius: 8px;
 }
@@ -228,7 +232,7 @@
     }
 
     .footer-logomap {
-        height: 90px;
+        height: 78px;
     }
 }
 
@@ -272,19 +276,22 @@
     .footer-location {
         justify-self: start;
         width: 100%;
-        margin-left: 0;
     }
 
-    .footer-end {
+    .footer-brand {
+        flex-direction: row;
+        align-items: center;
         justify-content: flex-start;
+        gap: 24px;
         align-self: start;
+        margin-bottom: 0;
     }
 
     .footer-seal {
-        height: 88px;
+        height: 78px;
     }
 
     .footer-logomap {
-        height: 82px;
+        height: 76px;
     }
 }

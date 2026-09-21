@@ -12,6 +12,10 @@
     --orange: #e85a20;
     --orange-dark: #c94a16;
     --shadow: 0 12px 30px rgba(11, 31, 58, 0.08);
+    /* One content measure for the whole site. Full-bleed bands (navbar, page
+       hero, footer) use --gutter so their content shares the .wrap left edge. */
+    --measure: 1120px;
+    --gutter: max(5%, calc((100% - var(--measure)) / 2));
 }
 
 * {
@@ -49,7 +53,7 @@ a:hover {
 .pg-title {
     background: var(--paper);
     border-bottom: 1px solid var(--line);
-    padding: 48px 8% 36px;
+    padding: 48px var(--gutter) 36px;
 }
 
 .page-hero h1,
@@ -72,7 +76,7 @@ a:hover {
 }
 
 .wrap {
-    width: min(1120px, 90%);
+    width: min(var(--measure), 90%);
     margin: 0 auto;
 }
 
@@ -105,10 +109,12 @@ a:hover {
 /* Home hero */
 .hero {
     position: relative;
-    min-height: 78vh;
+    /* Fixed cap rather than vh, so the banner does not grow on large monitors */
+    min-height: clamp(360px, 42vw, 500px);
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    padding: 0 var(--gutter);
     background: #0b1f3a center/cover no-repeat;
     margin-top: 104px;
 }
@@ -117,29 +123,43 @@ a:hover {
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(180deg, rgba(11, 31, 58, 0.04) 0%, rgba(11, 31, 58, 0.16) 100%);
+    background: linear-gradient(180deg, rgba(11, 31, 58, 0.22) 0%, rgba(11, 31, 58, 0.46) 100%);
 }
 
 .hero-card {
     position: relative;
     z-index: 1;
-    width: min(720px, 90%);
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    width: min(560px, 100%);
     background: rgba(255, 255, 255, 0.94);
-    border-radius: 18px;
-    padding: 28px 32px 26px;
-    text-align: center;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.18);
+    border: 1px solid rgba(11, 31, 58, 0.12);
+    border-radius: 4px;
+    padding: 22px 26px;
 }
 
+/* The mark only. The navbar carries the full horizontal lockup. */
 .hero-card img {
-    width: min(520px, 100%);
+    width: 150px;
     height: auto;
+    flex-shrink: 0;
 }
 
-.hero-card p {
-    margin: 10px 0 0;
+.hero-lab {
+    margin: 0 0 8px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--navy);
+}
+
+.hero-affil {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.45;
     color: var(--navy-soft);
-    font-weight: 600;
 }
 
 /* Welcome */
@@ -165,6 +185,19 @@ a:hover {
 
 .lab-fullname {
     font-size: 1.25em;
+}
+
+.research-topic {
+    font-size: 1.1em;
+    font-weight: 700;
+    color: var(--navy);
+}
+
+/* Underline every other topic so adjacent ones stay visually separate */
+.research-topic:nth-of-type(even) {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
 }
 
 .acronym-p,
@@ -197,53 +230,68 @@ a:hover {
 /* News */
 .news-list {
     display: grid;
-    gap: 16px;
+    gap: 0;
 }
 
 .news-item {
-    background: var(--paper);
-    border: 1px solid var(--line);
-    border-radius: 10px;
-    padding: 18px 22px;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    column-gap: 28px;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--line);
+}
+
+.news-item:first-child {
+    border-top: 1px solid var(--line);
 }
 
 .news-item time,
 .news-date {
-    display: block;
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    padding-top: 3px;
     color: var(--muted);
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 600;
     letter-spacing: 0.02em;
-    margin-bottom: 6px;
 }
 
 .news-item h3 {
+    grid-column: 2;
+    grid-row: 1;
     font-size: 1.15rem;
-    margin-bottom: 6px;
+    margin-bottom: 4px;
 }
 
 .news-item p {
+    grid-column: 2;
+    grid-row: 2;
     margin: 0;
     color: var(--muted);
 }
 
 .news-page .news-item {
-    padding: 22px 24px;
+    padding: 24px 0;
 }
 
 /* Research topics */
 .topic-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 22px;
+    gap: 44px;
 }
 
 .topic-card {
-    background: var(--paper);
-    border: 1px solid var(--line);
-    border-radius: 14px;
-    padding: 28px 24px;
-    box-shadow: var(--shadow);
+    padding: 0;
+}
+
+.topic-card::before {
+    content: "";
+    display: block;
+    width: 48px;
+    height: 3px;
+    background: var(--orange);
+    margin-bottom: 16px;
 }
 
 .topic-num {
@@ -265,7 +313,7 @@ a:hover {
 
 .topic-card p {
     color: var(--muted);
-    margin-bottom: 16px;
+    margin-bottom: 0;
 }
 
 /* Acknowledgements */
@@ -279,19 +327,16 @@ a:hover {
 .ack-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 22px;
+    gap: 28px 32px;
+    align-items: center;
 }
 
 .ack-logo {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--paper);
-    border: 1px solid var(--line);
-    border-radius: 14px;
-    box-shadow: var(--shadow);
-    padding: 22px 28px;
-    min-height: 132px;
+    padding: 10px;
+    min-height: 116px;
     min-width: 0;
 }
 
@@ -441,17 +486,56 @@ a:hover {
 }
 
 /* People */
-.pi-card,
-.person-row {
+.people-section {
+    margin-bottom: 52px;
+}
+
+.people-section:last-child {
+    margin-bottom: 0;
+}
+
+.people-section > h2 {
+    font-size: 1.4rem;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 28px;
+}
+
+.pi-row {
     display: grid;
     grid-template-columns: 240px 1fr;
     gap: 32px;
-    background: var(--paper);
-    border: 1px solid var(--line);
-    border-radius: 16px;
-    padding: 28px;
-    margin-bottom: 22px;
-    box-shadow: var(--shadow);
+    align-items: start;
+}
+
+.people-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+    gap: 34px 28px;
+}
+
+.person {
+    min-width: 0;
+}
+
+.person .photo-frame {
+    margin-bottom: 14px;
+}
+
+.person h3 {
+    font-size: 1.05rem;
+    margin-bottom: 2px;
+}
+
+.person .person-role {
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.person p {
+    color: var(--muted);
+    font-size: 14px;
+    margin: 0;
 }
 
 .photo-frame {
@@ -472,20 +556,23 @@ a:hover {
     object-fit: cover;
 }
 
-.pi-card {
-    align-items: start;
-}
-
-.pi-card .photo-frame {
+.pi-row .photo-frame {
     aspect-ratio: auto;
     background: transparent;
+    border: 0;
 }
 
-.pi-card .photo-frame img {
+.pi-row .photo-frame img {
     width: 100%;
     height: auto;
     object-fit: contain;
     display: block;
+    border-radius: 12px;
+}
+
+.pi-row .person-copy h3 {
+    font-size: 1.5rem;
+    margin-bottom: 4px;
 }
 
 .photo-placeholder {
@@ -496,7 +583,6 @@ a:hover {
     font-weight: 600;
 }
 
-.person-copy h2,
 .person-copy h3 {
     margin-bottom: 4px;
 }
@@ -515,14 +601,6 @@ a:hover {
 .person-meta {
     margin: 10px 0 0;
     font-size: 15px;
-}
-
-.people-group {
-    margin-top: 48px;
-}
-
-.people-group h2 {
-    margin-bottom: 18px;
 }
 
 /* Publications */
@@ -557,6 +635,17 @@ a:hover {
 
 .pub-list em {
     color: var(--muted);
+}
+
+.pub-links {
+    display: block;
+    margin-top: 6px;
+    font-size: 14px;
+    color: var(--muted);
+}
+
+.pub-links a {
+    font-weight: 600;
 }
 
 .scholar-link {
@@ -698,15 +787,22 @@ a:hover {
     }
 
     .hero {
-        min-height: 62vh;
+        min-height: 320px;
         margin-top: 92px;
     }
 
     .welcome-grid,
     .topic-grid,
-    .pi-card,
-    .person-row {
+    .pi-row {
         grid-template-columns: 1fr;
+    }
+
+    .pi-row .photo-frame {
+        max-width: 220px;
+    }
+
+    .topic-grid {
+        gap: 28px;
     }
 
     .topic-list {
@@ -724,14 +820,32 @@ a:hover {
         width: 100%;
     }
 
+    .news-item {
+        grid-template-columns: 1fr;
+    }
+
+    .news-item time,
+    .news-date,
+    .news-item h3,
+    .news-item p {
+        grid-column: 1;
+        grid-row: auto;
+    }
+
+    .news-item time,
+    .news-date {
+        padding-top: 0;
+        margin-bottom: 4px;
+    }
+
     .ack-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 16px;
+        gap: 20px 16px;
     }
 
     .ack-logo {
         min-height: 104px;
-        padding: 18px 20px;
+        padding: 8px;
     }
 
     .ack-logo img,
@@ -744,5 +858,19 @@ a:hover {
 
     .section {
         padding: 52px 0;
+    }
+}
+
+/* Side by side, the mark leaves too little room for the caption to set well */
+@media only screen and (max-width: 620px) {
+    .hero-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        padding: 18px 20px;
+    }
+
+    .hero-card img {
+        width: 128px;
     }
 }
