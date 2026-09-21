@@ -604,7 +604,8 @@ a:hover {
 }
 
 /* Publications */
-.pub-year {
+.pub-year,
+.term-heading {
     margin: 36px 0 16px;
     padding-bottom: 8px;
     border-bottom: 2px solid var(--navy);
@@ -652,6 +653,66 @@ a:hover {
     display: inline-block;
     margin-top: 8px;
     font-weight: 700;
+}
+
+/* Teaching */
+.term-heading:first-child {
+    margin-top: 0;
+}
+
+.course {
+    padding: 24px 0;
+    border-bottom: 1px solid var(--line);
+}
+
+.course:first-child {
+    border-top: 1px solid var(--line);
+}
+
+.course-title {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+
+.course-code {
+    margin-right: 10px;
+    color: var(--orange);
+    font-weight: 700;
+}
+
+.course-summary {
+    max-width: 760px;
+    margin: 0 0 16px;
+    color: var(--muted);
+}
+
+.course-meta {
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    column-gap: 24px;
+    row-gap: 6px;
+    /* The label is set smaller than the value, so align on the text baseline */
+    align-items: baseline;
+    max-width: 680px;
+    margin: 0;
+}
+
+.course-meta dt {
+    color: var(--muted);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+}
+
+.course-meta dd {
+    margin: 0;
+    color: var(--ink);
+}
+
+.course-note {
+    margin: 24px 0 0;
+    color: var(--muted);
+    font-size: 15px;
 }
 
 /* Projects */
@@ -836,6 +897,15 @@ a:hover {
     .news-date {
         padding-top: 0;
         margin-bottom: 4px;
+    }
+
+    .course-meta {
+        grid-template-columns: 1fr;
+        row-gap: 2px;
+    }
+
+    .course-meta dd {
+        margin-bottom: 8px;
     }
 
     .ack-grid {

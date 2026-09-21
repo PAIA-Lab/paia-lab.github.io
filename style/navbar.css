@@ -245,6 +245,24 @@
     }
 }
 
+/* Eight links plus the full wordmark overrun the bar between the Bootstrap lg
+   breakpoint and roughly 1200px, so tighten both in that band */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .navbar-brand {
+        margin-right: 1rem;
+    }
+
+    .navbar-brand img {
+        height: 62px;
+        max-width: 240px;
+    }
+
+    .navbar a.nav-link {
+        font-size: 17px;
+        padding: 0.6rem 0.5rem;
+    }
+}
+
 @media only screen and (max-width: 900px) {
     .navbar {
         min-height: 92px;

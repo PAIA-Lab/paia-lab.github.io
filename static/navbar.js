@@ -5,6 +5,7 @@ function showNavbar(page) {
         people: "",
         publications: "",
         projects: "",
+        teaching: "",
         news: "",
         openings: ""
     };
@@ -26,6 +27,7 @@ function showNavbar(page) {
                 '<li class="nav-item"><a ' + links.people + ' class="nav-link" href="people.html">People</a></li>' +
                 '<li class="nav-item"><a ' + links.publications + ' class="nav-link" href="publications.html">Publications</a></li>' +
                 '<li class="nav-item"><a ' + links.projects + ' class="nav-link" href="projects.html">Projects</a></li>' +
+                '<li class="nav-item"><a ' + links.teaching + ' class="nav-link" href="teaching.html">Teaching</a></li>' +
                 '<li class="nav-item"><a ' + links.news + ' class="nav-link" href="news.html">News</a></li>' +
                 '<li class="nav-item"><a ' + links.openings + ' class="nav-link" href="openings.html">Openings</a></li>' +
             "</ul>" +
