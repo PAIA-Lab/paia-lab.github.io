@@ -532,10 +532,26 @@ a:hover {
     margin-bottom: 6px;
 }
 
+.person .person-meta {
+    margin: 0 0 6px;
+    font-size: 14px;
+}
+
 .person p {
     color: var(--muted);
     font-size: 14px;
     margin: 0;
+}
+
+.person p + p {
+    margin-top: 4px;
+}
+
+/* Same weight and size as .person-role (e.g. "Ph.D. Student") */
+.person p strong {
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--muted);
 }
 
 .photo-frame {
