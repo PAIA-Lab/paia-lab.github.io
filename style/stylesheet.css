@@ -553,8 +553,8 @@ a:hover {
 /* Portrait cards with fixed column width so sparse sections don't stretch */
 .people-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 240px));
-    gap: 28px 72px;
+    grid-template-columns: repeat(auto-fill, minmax(190px, 190px));
+    gap: 34px 72px;
     justify-content: start;
 }
 
