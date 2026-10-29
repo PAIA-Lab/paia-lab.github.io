@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Neutral person silhouette">
+  <rect width="512" height="512" fill="#d9e2ec"/>
+  <g fill="#8a96a6" transform="translate(256 256) scale(5.2) translate(-32 -32)">
+    <circle cx="32" cy="22" r="12"/>
+    <path d="M12 56c0-12.15 8.95-22 20-22s20 9.85 20 22"/>
+  </g>
+</svg>
