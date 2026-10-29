@@ -529,7 +529,7 @@ a:hover {
 
 /* People */
 .people-section {
-    margin-bottom: 40px;
+    margin-bottom: 52px;
 }
 
 .people-section:last-child {
@@ -540,7 +540,7 @@ a:hover {
     font-size: 1.4rem;
     padding-bottom: 10px;
     border-bottom: 1px solid var(--line);
-    margin-bottom: 20px;
+    margin-bottom: 28px;
 }
 
 .pi-row {
@@ -550,12 +550,10 @@ a:hover {
     align-items: start;
 }
 
-/* Portrait cards with fixed column width so sparse sections don't stretch */
 .people-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(190px, 190px));
-    gap: 34px 72px;
-    justify-content: start;
+    grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+    gap: 34px 28px;
 }
 
 .person {
@@ -563,7 +561,7 @@ a:hover {
 }
 
 .person .photo-frame {
-    margin-bottom: 12px;
+    margin-bottom: 14px;
 }
 
 .person-body {
@@ -970,11 +968,6 @@ a:hover {
 
     .course-meta dd {
         margin-bottom: 8px;
-    }
-
-    .people-grid {
-        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-        gap: 24px 16px;
     }
 
     .ack-grid {
