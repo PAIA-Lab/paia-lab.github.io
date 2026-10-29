@@ -618,6 +618,32 @@ a:hover {
     object-fit: cover;
 }
 
+/* Neutral silhouette placeholder (no headshot yet) */
+.photo-frame--silhouette {
+    background: #d9e2ec;
+}
+
+.photo-frame--silhouette svg {
+    width: 58%;
+    height: 58%;
+    fill: #8a96a6;
+}
+
+/* Initials avatar for members without a headshot */
+.photo-frame--initials {
+    background: #d9e2ec;
+    border-color: var(--line);
+}
+
+.photo-frame--initials span {
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 2.1rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    color: var(--navy);
+    line-height: 1;
+}
+
 .pi-row .photo-frame {
     aspect-ratio: auto;
     background: transparent;
