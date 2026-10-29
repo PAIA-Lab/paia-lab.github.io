@@ -550,25 +550,20 @@ a:hover {
     align-items: start;
 }
 
-/* Dense roster: photo + copy side by side, 1–2 columns */
+/* Portrait cards with fixed column width so sparse sections don't stretch */
 .people-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 18px 24px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 240px));
+    gap: 28px 72px;
+    justify-content: start;
 }
 
 .person {
-    display: grid;
-    grid-template-columns: 88px 1fr;
-    gap: 0 14px;
-    align-items: start;
     min-width: 0;
 }
 
 .person .photo-frame {
-    width: 88px;
-    margin-bottom: 0;
-    border-radius: 8px;
+    margin-bottom: 12px;
 }
 
 .person-body {
@@ -576,25 +571,24 @@ a:hover {
 }
 
 .person h3 {
-    font-size: 1.02rem;
+    font-size: 1.05rem;
     margin-bottom: 2px;
 }
 
 .person .person-role {
-    font-size: 13px;
+    font-size: 14px;
     margin-bottom: 6px;
 }
 
 .person .person-meta {
     margin: 0 0 6px;
-    font-size: 13.5px;
+    font-size: 14px;
 }
 
 .person p {
     color: var(--muted);
-    font-size: 13.5px;
+    font-size: 14px;
     margin: 0;
-    line-height: 1.45;
 }
 
 .person p + p {
@@ -604,7 +598,7 @@ a:hover {
 /* Same weight and size as .person-role (e.g. "Ph.D. Student") */
 .person p strong {
     font-weight: 600;
-    font-size: 13.5px;
+    font-size: 14px;
     color: var(--muted);
 }
 
@@ -979,8 +973,8 @@ a:hover {
     }
 
     .people-grid {
-        grid-template-columns: 1fr;
-        gap: 14px;
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+        gap: 24px 16px;
     }
 
     .ack-grid {
