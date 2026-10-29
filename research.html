@@ -55,19 +55,34 @@
                 </figure>
 
                 <div class="research-bridge">
-                    <p>These topics share one goal: the scientific and computational foundations for reliable autonomous intelligence in the physical world. They also share one difficulty. Sensors fail, calibration drifts, observations are incomplete, and rare events dominate safety outcomes, so perception, reasoning, and action cannot be studied in isolation.</p>
-                    <p>We therefore pursue the work above along three connected directions, each carrying the loop one step further: from sensing, to understanding, to decision-making.</p>
+                    <p>These topics point to a fundamental challenge in Physical AI: autonomous systems must make decisions based on an incomplete and evolving understanding of the physical world. Perception alone cannot provide a complete account of the environment; reasoning must interpret sensory evidence within its physical and temporal context, while decision-making must account for both the inferred understanding and what remains uncertain. Uncertainty in perception shapes what a system can infer, which future states it should anticipate, and what actions it can take. This relationship also works in reverse: the actions a system intends to take influence what it needs to observe and understand. Reliable autonomy therefore requires more than advancing perception, reasoning, and control separately; it requires understanding how these capabilities inform and constrain one another.</p>
+                    <p>We pursue this challenge through three closely related research directions: multimodal perception and sensor fusion, multimodal AI for autonomous systems, and intelligent prediction, control, and planning.</p>
                 </div>
 
                 <article class="research-block" id="perception">
-                    <h2>Multi-Sensor Fusion and Deep Perception</h2>
+                    <h2>Multimodal Perception and Sensor Fusion</h2>
                     <p>We develop reliable multimodal perception methods that transform heterogeneous sensor data into robust situational awareness. This direction integrates Camera, Radar, LiDAR, GNSS, and other sensing modalities through calibration, spatial alignment, temporal synchronization, uncertainty modeling, adaptive fusion, and deep representation learning.</p>
                     <p>Beyond improving accuracy on standard benchmarks, our goal is to create perception systems that understand their own reliability, detect degradation, and remain functional under occlusion, adverse weather, sensor faults, domain shift, and real-time deployment constraints.</p>
                     <p><strong>Recent articles on this topic:</strong></p>
                     <ol class="related-list">
-                        <li>Lei Cheng, Lihao Guo, Tianya Zhang, Tam Bang, Austin Harris, Mustafa Hajij, Mina Sartipi, and Siyang Cao. “CalibRefine: Deep Learning-Based Online Automatic Targetless LiDAR–Camera Calibration with Iterative and Attention-Driven Post-Refinement.” <em>IEEE Transactions on Instrumentation and Measurement</em>, 2026.</li>
-                        <li>Lei Cheng and Siyang Cao. “TransRAD: Retentive Vision Transformer for Enhanced Radar Object Detection.” <em>IEEE Transactions on Radar Systems</em>, 2025.</li>
-                        <li>Lei Cheng, Arindam Sengupta, and Siyang Cao. “3D Radar and Camera Co-Calibration: A Flexible and Accurate Method for Target-based Extrinsic Calibration.” <em>IEEE Radar Conference (RadarConf23)</em>, 2023.</li>
+                        <li>Lei Cheng, Lihao Guo, Tianya Zhang, Tam Bang, Austin Harris, Mustafa Hajij, Mina Sartipi, and Siyang Cao. “CalibRefine: Deep Learning-Based Online Automatic Targetless LiDAR–Camera Calibration with Iterative and Attention-Driven Post-Refinement.” <em>IEEE Transactions on Instrumentation and Measurement</em>, 2025.
+                            <span class="paper-badges"><a class="paper-badge arxiv" href="https://arxiv.org/abs/2502.17648" target="_blank" rel="noopener" title="arXiv">arXiv</a></span>
+                        </li>
+                        <li>Lei Cheng and Siyang Cao. “Radar-Camera Fused Multi-Object Tracking: Online Calibration and Common Feature.” <em>IEEE Transactions on Intelligent Transportation Systems</em>, 2025.
+                            <span class="paper-badges"><a class="paper-badge arxiv" href="https://arxiv.org/abs/2510.20794" target="_blank" rel="noopener" title="arXiv">arXiv</a></span>
+                        </li>
+                        <li>Lei Cheng, Arindam Sengupta, and Siyang Cao. “Deep Learning-Based Robust Multi-Object Tracking via Fusion of mmWave Radar and Camera Sensors.” <em>IEEE Transactions on Intelligent Transportation Systems</em>, 2024.
+                            <span class="paper-badges"><a class="paper-badge arxiv" href="https://arxiv.org/abs/2407.08049" target="_blank" rel="noopener" title="arXiv">arXiv</a></span>
+                        </li>
+                        <li>Arindam Sengupta, Lei Cheng (co-first author), and Siyang Cao. “Robust multiobject tracking using mmWave radar-camera sensor fusion.” <em>IEEE Sensors Letters</em>, 2022.
+                            <span class="paper-badges"><a class="paper-badge ieee" href="https://ieeexplore.ieee.org/document/9916096" target="_blank" rel="noopener" title="IEEE Xplore">IEEE</a></span>
+                        </li>
+                        <li>Lei Cheng, Arindam Sengupta, and Siyang Cao. “3D Radar and Camera Co-Calibration: A Flexible and Accurate Method for Target-based Extrinsic Calibration.” <em>IEEE Radar Conference (RadarConf23)</em>, 2023.
+                            <span class="paper-badges"><a class="paper-badge arxiv" href="https://arxiv.org/abs/2307.15264" target="_blank" rel="noopener" title="arXiv">arXiv</a></span>
+                        </li>
+                        <li>Lei Cheng and Siyang Cao. “Online Targetless Radar-Camera Extrinsic Calibration Based on the Common Features of Radar and Camera.” <em>IEEE National Aerospace and Electronics Conference (NAECON)</em>, 2023.
+                            <span class="paper-badges"><a class="paper-badge arxiv" href="https://arxiv.org/abs/2309.00787" target="_blank" rel="noopener" title="arXiv">arXiv</a></span>
+                        </li>
                     </ol>
                 </article>
 
@@ -77,9 +92,13 @@
                     <p>Rather than treating foundation models as black-box predictors, we aim to constrain them with sensor evidence, scene geometry, temporal dynamics, uncertainty estimation, and physical plausibility. The long-term vision is foundation-model-enabled autonomy for open-world perception, semantic reasoning, human–system communication, and safe decision support.</p>
                     <p><strong>Recent articles on this topic:</strong></p>
                     <ol class="related-list">
-                        <li>Lei Cheng and Siyang Cao. “Radar-Camera Fused Multi-Object Tracking: Online Calibration and Common Feature.” <em>IEEE Transactions on Intelligent Transportation Systems</em>, 2026.</li>
-                        <li>Lei Cheng, Arindam Sengupta, and Siyang Cao. “Deep Learning-Based Robust Multi-Object Tracking via Fusion of mmWave Radar and Camera Sensors.” <em>IEEE Transactions on Intelligent Transportation Systems</em>, 2024.</li>
-                        <li>Lei Cheng and Siyang Cao. “Online Targetless Radar–Camera Extrinsic Calibration Based on the Common Features of Radar and Camera.” <em>IEEE National Aerospace and Electronics Conference (NAECON)</em>, 2023.</li>
+                        <li>Lei Cheng and Siyang Cao. “Heterogeneous Sensor Fusion for Environmental Perception in Autonomous Systems: Principles, Frameworks, and Emerging Trends.” <em>IEEE Transactions on Intelligent Transportation Systems</em>, 2026. (Under Review)</li>
+                        <li>Dianwei Chen, Zifan Zhang, Lei Cheng, Yuchen Liu, and Xianfeng Yang. “INSIGHT: Enhancing Autonomous Driving Safety through Vision-Language Models on Context-Aware Hazard Detection and Edge Case Evaluation.” <em>IEEE Intelligent Vehicles Symposium (IV)</em>, 2026.
+                            <span class="paper-badges"><a class="paper-badge arxiv" href="https://arxiv.org/abs/2502.00262" target="_blank" rel="noopener" title="arXiv">arXiv</a></span>
+                        </li>
+                        <li>Lei Cheng and Siyang Cao. “TransRAD: Retentive Vision Transformer for Enhanced Radar Object Detection.” <em>IEEE Transactions on Radar Systems</em>, 2025.
+                            <span class="paper-badges"><a class="paper-badge arxiv" href="https://arxiv.org/abs/2501.17977" target="_blank" rel="noopener" title="arXiv">arXiv</a></span>
+                        </li>
                     </ol>
                 </article>
 
@@ -89,9 +108,14 @@
                     <p>In transportation and autonomous driving, this includes predictive safety systems, variable speed limits, advanced safety warnings, uncertainty-aware motion prediction, and planning under occlusion, poor visibility, and rare events. In robotics and related settings, it includes anomaly-aware monitoring, intent inference, and adaptive operation in human-centered environments.</p>
                     <p><strong>Recent articles on this topic:</strong></p>
                     <ol class="related-list">
-                        <li>Tam Bang, Hoang H. Nguyen, Deponker Sarker Depto, Lei Cheng, Lihao Guo, Siyang Cao, Tianya Zhang, Austin Harris, and Mina Sartipi. “Real-Time Edge-Based Multi-Sensor Fusion for Vulnerable Road User Safety at Urban Intersections.” <em>Transportation Research Board (TRB) Annual Meeting</em>, 2026.</li>
-                        <li>Tianya Zhang, Lei Cheng, Tam Bang, Lihao Guo, Mustafa Hajij, Siyang Cao, Austin Harris, and Mina Sartipi. “Roadside Sensor Systems for Vulnerable Road User Protection: A Review of Methods and Applications.” <em>IEEE Access</em>, 2025.</li>
-                        <li>Lei Cheng, Yaobang Gong, Xianfeng Yang, and Gang-Len Chang. “Drone-based Workzone Safety Alert System.” <em>M-TRAIL</em>, 2025.</li>
+                        <li>Tianya Zhang, Lei Cheng, Tam Bang, Lihao Guo, Mustafa Hajij, Siyang Cao, Austin Harris, and Mina Sartipi. “Roadside Sensor Systems for Vulnerable Road User Protection: A Review of Methods and Applications.” <em>IEEE Access</em>, 2025.
+                            <span class="paper-badges"><a class="paper-badge ieee" href="https://doi.org/10.1109/ACCESS.2025.3558174" target="_blank" rel="noopener" title="IEEE Xplore">IEEE</a></span>
+                        </li>
+                        <li>Zihan Ma, Sung Yoon Park, Gang-Len Chang, and Lei Cheng. “Design and Field Demonstration of a Real-Time UAS-Based System for Speed Management and Advanced Work Zone Safety Alerts.” <em>Transportation Research Board (TRB) Annual Meeting</em>, 2027.</li>
+                        <li>Tam Bang, Hoang H. Nguyen, Lei Cheng, Lihao Guo, Siyang Cao, Hussam Abubakr, Tianya Zhang, Austin Harris, and Mina Sartipi. “CLIFE: Camera-LiDAR Fusion Framework for Edge-Deployable Roadside VRU Perception.” <em>IEEE 29th International Conference on Intelligent Transportation Systems (ITSC)</em>, 2026.
+                            <span class="paper-badges"><a class="paper-badge arxiv" href="https://arxiv.org/abs/2607.16154" target="_blank" rel="noopener" title="arXiv">arXiv</a></span>
+                        </li>
+                        <li>Tam Bang, Hoang H. Nguyen, Deponker Sarker Depto, Lei Cheng, Lihao Guo, Siyang Cao, Tianya Zhang, Austin Harris, and Mina Sartipi. “Real-Time Edge-Based Multi-Sensor Fusion for Vulnerable Road User Safety at Urban Intersections.” <em>Transportation Research Board (TRB) Annual Meeting</em>, 2025.</li>
                     </ol>
                 </article>
             </div>
